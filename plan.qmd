@@ -6,13 +6,19 @@ date: last-modified
 # Links
 
 - Repositorio de apoyo: [maurolepore/sofware-review](https://github.com/maurolepore/software-review)
+  - TODO move to https://github.com/ropensci-training 
   - Plantillas de issues imitando a ropensci/software-review
   - Slides
-- [documento colaborativeo](https://docs.google.com/document/d/1IUuTx92oxPPqdPyeA0HcMKuFqS-VjcIgGcP260VpEks/edit?usp=sharing)
+- [documento colaborativeo](TODO add link)
 - [devguide](https://devdevguide.netlify.app/es/index.es) 
 - [pkgcheck](https://docs.ropensci.org/pkgcheck/)
 - Paquete de practica: TODO
 - Ejemplos de paquetes en Español: TODO
+
+- Blogs sobre el proceso de revision:
+  - como autor/a: https://ropensci.org/es/blog/2025/03/25/r-package-review/
+  - Como revisor/a https://ropensci.org/es/blog/2017/09/08/first-review-experiences/
+  - https://ropensci.org/es/blog/2017/08/22/first-package-review/
 
 # Objetivos 
 
@@ -85,15 +91,48 @@ date: last-modified
   - Por que? ej. El proceso es publico y transparente porque ...
 - Cierre
 
-# Preguntas
+# Reunion con Yani 
+
+## Preguntas
 
 - Cuantos participantes?
+  - Son 10 campeones + 10 mentores en total
+  - Tipicamente participan 5-15
 - Que organizacion usar para repos de practica?
+  - La personal o https://github.com/ropensci-training
 - Que documento colaborativo usar?
-- Que ejercicios funcionan mejor?
+  - TODO Pedir a Yani la plantilla del documento colaborativo.
+- Que ejercicios funcionan mejor? Dos tipos que le functionan bien:
+  - Para ejercicios mas bien teoricos:
+    - En el doe compartir el link a lo que tienen que leer y algunas preguntas para guiar la lectura
+    - 10': de trabajo en breakout rooms, quizas alguien comparte pantalla.
+    -  5': de discusion en la sala central
+  - Para ejercicios mas "hands on"
+    -  5' Demo
+    - 10' Actividad
+    -  5' Preguntas/discusion
 - Hay ejemplos:
-  - Documento colaborativo
-  - Workshops de Yani/Maelle
-  - Repos (para ver que organizacion usan)
-- Que cierre podria tener buen impacto?
+  - TODO: ask Yani videos para ver a Yani en accion
+- Que cierre podria tener buen impacto
+  - Que impresion se llevan comparando este proceso con revision en academia?
+  - Feedback
+  - Invitarlos a someter el formulario para ser revisores
+  - Invitarlos a divulgar en sus redes el programa de revision por pares de rOpenSci.
+
+## Ideas 
+
+- Disfrutan los grupos
+- Se animan a hablar.
+- anotar grupos y nombres que hablaron y tratar de hacer participar todoas
+- asumir una sola pantalla
+- el chat queda registrado y se comparte
+- compare peer-review in academia
+- move to https://github.com/ropensci-training
+- ensure to highlight kindness
+- pkgcheck: demo a toy package, then run in another package (maelles'?) or your own
+- review/pkgcheck a package from another champion
+- Close 
+  - with impressions compared to academia
+  - feedback
+  - invite to subscrive to become a reviewer via the form and ask to spread the word
 
