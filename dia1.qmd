@@ -56,15 +56,11 @@ flowchart LR
     D -->|Si| E((Publicar))
 ```
 
-## Comunicacion: Codigo de Conducta
+## Comunicacion: [Codigo de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
 
 - La comunidad es nuestro mejor activo
 - Nuestra diversidad es nuestra fortaleza
 - No toleramos ningún tipo de acoso
-
-Recurso:
-
-- [Codigo de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
 
 ## Comunicacion: Estructura
 
@@ -101,13 +97,11 @@ Explorar los detalles del proceso para proponer sofware para revision y generar 
 
 Vamos a intentar responder la mayor cantidad de preguntas posible.
 
-# 3. Instalar pkgcheck
+# 3. Instalar [pkgcheck](https://docs.ropensci.org/pkgcheck/)
 
 ```r
 install.packages ("pkgcheck")
 ```
-
-[pkgcheck](https://docs.ropensci.org/pkgcheck/)
 
 # Ejercicios 
 
