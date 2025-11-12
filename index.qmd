@@ -13,8 +13,7 @@ format:
 
 1. Entender las etapas y qualidades mas importantes del proceso de revision por pares en rOpenSci
 2. Ejercitar el proceso para proponer software para revision
-3. Instalar pkgcheck
-4. Ejercitar el proceso para enviar software para revision
+3. Ejercitar el proceso para enviar software para revision
 
 # 1. Entender las etapas y qualidades mas importantes del proceso de revision por pares en rOpenSci
 
@@ -96,12 +95,6 @@ Explorar los detalles del proceso para proponer sofware para revision y generar 
 
 Vamos a intentar responder la mayor cantidad de preguntas posible.
 
-# 3. Instalar [pkgcheck](https://docs.ropensci.org/pkgcheck/)
-
-```r
-install.packages ("pkgcheck")
-```
-
 # Ejercicios
 
 ## {{< fa edit >}} Revision en la academia vs. rOpensci
@@ -170,6 +163,12 @@ Escribir reflexiones que cuenten la historia de lo que vimos
 - Donde? ej. Todo el proceso ocurre en ....
 - Por que? e.g. La revision por pares ayuda a ...
 - Cuando? ej. La evaluacion de alcance debe hacerse antes de ...
+
+## {{< fa edit >}} Instalar [pkgcheck](https://docs.ropensci.org/pkgcheck/)
+
+```r
+install.packages ("pkgcheck")
+```
 
 # Links
 
