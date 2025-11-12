@@ -9,25 +9,25 @@ format:
     toc-location: left
 ---
 
-# Introducction
+# Introducción
 
 ## Objetivos principales
 
-Dia 1
-- Entender las etapas y qualidades mas importantes del proceso de revision por pares en rOpenSci
+Día 1
+- Entender las etapas y cualidades mas importantes del proceso de revision por pares en rOpenSci
 - Ejercitar el proceso para proponer software para revision
 
-Dia 2
+Día 2
 - Ejercitar el proceso para enviar software para revision
 
-## Plan dia 1
+## Plan día 1
 
-Introduccion
+Introducción
 
-- Comparacion con la academia
+- Comparación con la academia
 - El proceso para proponer software para revision
 - El proceso para enviar software para revision
-- La comunicacion en rOpenSci
+- La comunicación en rOpenSci
 - Recursos
 
 Proponer software para revision
@@ -39,15 +39,15 @@ Preguntas y respuestas
 
 Instalar pkgcheck
 
-## Comparacion con la academia
+## Comparación con la academia
 
 En la academia y en rOpenSci ...
 
-- Cual es la motivacion de un/a autor/a o revisor/a?
-- Que otros roles participan?
-- Que medio se usa para la comunicacion?
-- Cuando se acepta o rechaza un trabajo?
-- Como es la comunicacion?
+- ¿Cuál es la motivacion de un/a autor/a o revisor/a?
+- ¿Qué otros roles participan?
+- ¿Qué medio se usa para la comunicación?
+- ¿Cuándo se acepta o rechaza un trabajo?
+- ¿Cómo es la comunicación?
 
 ## Proponer software para revision
 
@@ -72,13 +72,13 @@ flowchart LR
     D -->|Si| E((Publicar))
 ```
 
-## La comunicacion en rOpenSci: [Codigo de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
+## La comunicación en rOpenSci: [Codigo de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
 
 - La comunidad es nuestro mejor activo
 - Nuestra diversidad es nuestra fortaleza
 - No toleramos ningún tipo de acoso
 
-## La comunicacion en rOpenSci: Estructura
+## La comunicación en rOpenSci: Estructura
 
 Ofrecer:
 
@@ -86,7 +86,7 @@ Ofrecer:
 1. Sugerencia
 1. Seguimiento
 
-## La comunicacion en rOpenSci: Ejemplos
+## La comunicación en rOpenSci: Ejemplos
 
 TODO link ejemplo
 
@@ -94,17 +94,17 @@ TODO link ejemplo
 
 ## Abrir issue
 
-Abri un issue para proponer software en el [repositorio de practica](https://github.com/maurolepore/software-review/issues). Podes usar tu paquete o cualquiera de estos: [eph](https://github.com/ropensci/software-review/issues/593), [karel](https://github.com/ropensci/software-review/issues/620), [agroclimatico](https://github.com/ropensci/software-review/issues/599).
+Abrí un issue para proponer software en el [repositorio de practica](https://github.com/maurolepore/software-review/issues). Podés usar tu paquete o cualquiera de estos: [eph](https://github.com/ropensci/software-review/issues/593), [karel](https://github.com/ropensci/software-review/issues/620), [agroclimatico](https://github.com/ropensci/software-review/issues/599).
 
-## Communicar amablemente
+## Comunicar amablemente
 
-Como editor/a, escribir un comendario constructivo y amable notificando que el paquete esta fuera del alcance de rOpenSci.
+Como editor/a, escribir un comentario constructivo y amable notificando que el paquete esta fuera del alcance de rOpenSci.
 
-A modo de ejemplo podes usar [karel](https://github.com/ropensci/software-review/issues/620), que fue revisado como exepcion por el programa de campeopne/as pero que normalmente esta fuera del alcancd de las categorias de rOpenSci.
+A modo de ejemplo podes usar [karel](https://github.com/ropensci/software-review/issues/620), que fue revisado como excepción por el programa de campeone/as pero que normalmente esta fuera del alcance de las categorias de rOpenSci.
 
 # Preguntas y respuestas
 
-(10') Explorar los detalles del proceso para proponer sofware para revision y generar preguntas, sobre lo que vimos y lo que no vimos hoy:
+(10') Explorar los detalles del proceso para proponer software para revision y generar preguntas, sobre lo que vimos y lo que no vimos hoy:
 
 - Explorar la [plantilla real de propuesta de software para revisión](https://github.com/ropensci/software-review/issues)
 - Explorar issues reales etiquetados con [0/presubmission](https://github.com/ropensci/software-review/issues?q=is%3Aissue%20label%3A0%2Fpresubmission)
@@ -132,7 +132,7 @@ install.packages ("pkgcheck")
   - [Revisión del software, perspectivas de un académico](https://ropensci.org/es/blog/2025/03/25/r-package-review/) (Alex Koiter, autor)
   - [Experiencias revisando paquetes de rOpenSci por primera vez](https://ropensci.org/es/blog/2017/09/08/first-review-experiences/) (Verena Haunschmid, revisora)
   - [Así que (no) crees que puedas revisar un paquete](https://ropensci.org/es/blog/2017/08/22/first-package-review/) (Mara Averick revisora)
-- Blog sobre communicacion en open source: [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/)
+- Blog sobre comunicación en open source: [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/)
 
 # Ejercicios
 
@@ -180,8 +180,8 @@ b. Revisar
 
 Escribir reflexiones que cuenten la historia de lo que vimos
 
-- Que? ej. Las actividades principlaes del proceso son ...
-- Quien? ej. Los roles que participan en la pre-submision son ...
+- Que? ej. Las actividades principales del proceso son ...
+- Quien? ej. Los roles que participan en la presubmisión son ...
 - Como? ej. El feedback debe ser ...
 - Donde? ej. Todo el proceso ocurre en ....
 - Por que? e.g. La revision por pares ayuda a ...
