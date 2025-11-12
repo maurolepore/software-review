@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Taller de revisión de software por pares en rOpenSci",
     "section": "",
-    "text": "Entender las etapas y qualidades mas importantes del proceso de revision por pares en rOpenSci\nEjercitar el proceso para proponer software para revision\nInstalar pkgcheck\nEjercitar el proceso para enviar software para revision",
+    "text": "Entender las etapas y qualidades mas importantes del proceso de revision por pares en rOpenSci\nEjercitar el proceso para proponer software para revision\nEjercitar el proceso para enviar software para revision",
     "crumbs": [
       "Home",
       "Taller de revisión de software por pares en rOpenSci"
@@ -159,6 +159,17 @@
     "title": "Taller de revisión de software por pares en rOpenSci",
     "section": " Repaso",
     "text": "Repaso\nEscribir reflexiones que cuenten la historia de lo que vimos\n\nQue? ej. Las actividades principlaes del proceso son …\nQuien? ej. Los roles que participan en la pre-submision son …\nComo? ej. El feedback debe ser …\nDonde? ej. Todo el proceso ocurre en ….\nPor que? e.g. La revision por pares ayuda a …\nCuando? ej. La evaluacion de alcance debe hacerse antes de …",
+    "crumbs": [
+      "Home",
+      "Taller de revisión de software por pares en rOpenSci"
+    ]
+  },
+  {
+    "objectID": "index.html#instalar-pkgcheck",
+    "href": "index.html#instalar-pkgcheck",
+    "title": "Taller de revisión de software por pares en rOpenSci",
+    "section": " Instalar pkgcheck",
+    "text": "Instalar pkgcheck\ninstall.packages (\"pkgcheck\")",
     "crumbs": [
       "Home",
       "Taller de revisión de software por pares en rOpenSci"
