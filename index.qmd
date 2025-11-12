@@ -11,14 +11,9 @@ format:
 
 # Objetivos
 
-Día 1
-
 1. Entender las etapas y qualidades mas importantes del proceso de revision por pares en rOpenSci
 2. Ejercitar el proceso para proponer software para revision
 3. Instalar pkgcheck
-
-Día 2
-
 4. Ejercitar el proceso para enviar software para revision
 
 # 1. Entender las etapas y qualidades mas importantes del proceso de revision por pares en rOpenSci
