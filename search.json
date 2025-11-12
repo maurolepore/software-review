@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Taller de revisión de software por pares en rOpenSci",
     "section": "",
-    "text": "Día 1\n\nEntender las etapas y qualidades mas importantes del proceso de revision por pares en rOpenSci\nEjercitar el proceso para proponer software para revision\nInstalar pkgcheck\n\nDía 2\n\nEjercitar el proceso para enviar software para revision",
+    "text": "Entender las etapas y qualidades mas importantes del proceso de revision por pares en rOpenSci\nEjercitar el proceso para proponer software para revision\nInstalar pkgcheck\nEjercitar el proceso para enviar software para revision",
     "crumbs": [
       "Home",
       "Taller de revisión de software por pares en rOpenSci"
