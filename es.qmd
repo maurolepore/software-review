@@ -9,48 +9,54 @@ format:
     mermaid-format: svg
 ---
 
-## Plan para el día 1
-
-- Introducción al taller
-- Introducción al proceso de punta a punta
-- Proponer software para revision
-- Instalar pkgcheck
-- Preguntas y respuestas
-
 # Introducción al taller
 
 - Hola! Soy [Mauro](https://ropensci.org/author/mauro-lepore/) 👋
 - Este taller para [vos](https://ropensci.org/es/champions/) 🏅🇪🇸
-- Objetivos principales
-  - Entender las etapas y cualidades mas importantes
-  - Practicar proponer software para revision
-  - Practicar enviar software para revision
+- [Recursos]
+
+## Objetivos principales
+
+- Entender las etapas y cualidades más importantes
+- Practicar proponer software para revisión
+- Practicar enviar software para revisión
+
+## Plan para el día 1
+
+- Introducción al taller
+- Introducción al proceso de punta a punta
+- Proponer software para revisión
+- Instalar pkgcheck
+- Preguntas y respuestas
 
 # Introducción al proceso de punta a punta
+
+- [Código de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
+- [Paquetes de rOpenSci: Desarrollo, mantenimiento y revisión por pares](https://devguide.ropensci.org/es/index.es.html)
 
 ## Comparación con la academia
 
 En la academia y en rOpenSci ...
 
-- ¿Cuál es la motivacion de un/a autor/a o revisor/a?
+- ¿Cuál es la motivación de un/a autor/a o revisor/a?
 - ¿Qué otros roles participan?
 - ¿Qué medio se usa para la comunicación?
 - ¿Cuándo se acepta o rechaza un trabajo?
 - ¿Cómo es la comunicación?
 
-## Proponer software para revision
+## Proponer software para revisión
 
 ```{mermaid}
 flowchart LR
     B((1-Abrir issue))
     B --> C{2-¿Dentro del alcance?}
-    C -->|No| E{3-¿Excepcion?}
+    C -->|No| E{3-¿Excepción?}
     C -->|Si| D[4-Enviar]
     E -->|Si| D
     E -->|No| G((5-Cerrar issue))
 ```
 
-## Enviar software para revision
+## Enviar software para revisión
 
 ```{mermaid}
 flowchart LR
@@ -61,13 +67,13 @@ flowchart LR
     D -->|Si| E((Publicar))
 ```
 
-## [Codigo de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
+## [Código de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
 
 - La comunidad es nuestro mejor activo
 - Nuestra diversidad es nuestra fortaleza
 - No toleramos ningún tipo de acoso
 
-## Comunicacion amable y constructiva
+## Comunicación amable y constructiva
 
 ### Estructura
 
@@ -83,21 +89,21 @@ Recursos
 - [Conversaciones Cruciales: herramientas para comunicar mejor cuando más se necesita](https://www.amazon.com/Conversaciones-Cruciales-Edici%C3%B3n-revisada-conocimiento-ebook/dp/B01EX1TZQG/ref=sr_1_1?adgrpid=167955646707&dib=eyJ2IjoiMSJ9.Ws1WzIBF0cC2Dm2-H47hguDVuXRPmMy9rZLGRYA4t3ER8EP9QL1L1dPW8a2l0c2aI65gElZhBVvYTfIcqtuaBVQcnOAmIBffgVzFQKm44rUISeaXgEIVBBw4-muztHHDiwE9jwRJSFYtSDFMAq4h9Rvb-GvpCxfZNzbfBApAjBAXNIQ63XVjTnFrOly1C-YCBSC8uEVyOljvl5CfMMfShGRKX-fYLjSLXyU0CJW-xuk.LRH-a9xfbt1VH_6O1wTX-6nxoUp_g1gSKmBPfElISuA&dib_tag=se&hvadid=730129623296&hvdev=c&hvlocphy=9070297&hvnetw=g&hvqmt=e&hvrand=357311298508997420&hvtargid=kwd-319512755646&hydadcr=23800_13790585&keywords=conversaciones+cruciales&mcid=bd94c27aa7253eda9e137472f79bfcd2&qid=1763123775&sr=8-1)
 :::
 
-## Comunicacion amable y constructiva
+## Comunicación amable y constructiva
 
 ### Ejemplos
 
 {eph}
 
-<details><summary>[Revision de `@guadag12`](https://github.com/ropensci/software-review/issues/593#issuecomment-1709968472)</summary>
+<details><summary>[Revisión de `@guadag12`](https://github.com/ropensci/software-review/issues/593#issuecomment-1709968472)</summary>
 
 Seguridad
 
-> Antes que nada, felicitaciones por el paquete. ... En terminos generales funciona muy bien, corre rápido, es simple de usar y tiene mucha información. 
+> Antes que nada, felicitaciones por el paquete. ... En términos generales funciona muy bien, corre rápido, es simple de usar y tiene mucha información. 
 
 Sugerencia
 
-> Ahora si, procedo a la review siguiendo las recomendaciones de rOpenSci:
+> Ahora sí, procedo a la review siguiendo las recomendaciones de rOpenSci:
 > ...
 > De todo lo que mencioné tal vez le prestaría atención a dos aspectos:
 > - Los ejemplos de las funciones que mencionaba arriba. ...
@@ -123,7 +129,7 @@ Sugerencia
 
 {agroclimatico}
 
-<details><summary>[Revision de `@VeruGHub`](https://github.com/ropensci/software-review/issues/599#issuecomment-1936698026)</summary>
+<details><summary>[Revisión de `@VeruGHub`](https://github.com/ropensci/software-review/issues/599#issuecomment-1936698026)</summary>
 
 Seguridad
 
@@ -145,23 +151,23 @@ Sugerencia
 
 > Incorporé los comentarios y sugerencias al paquete. ...
 
-Segumiento
+Seguimiento
 
 > Espero no haberme olvidado de nada, aguardo sus comentarios!
 
 </details>
 
-# Proponer software para revision
+# Proponer software para revisión
 
 ## Abrir issue
 
-Abrí un issue para proponer software en el [repositorio de practica](https://github.com/maurolepore/software-review/issues). Podés usar tu paquete o cualquiera de estos: [eph](https://github.com/ropensci/software-review/issues/593), [karel](https://github.com/ropensci/software-review/issues/620), [agroclimatico](https://github.com/ropensci/software-review/issues/599).
+Abrí un issue para proponer software en el [repositorio de práctica](https://github.com/maurolepore/software-review/issues). Podés usar tu paquete o cualquiera de estos: [eph](https://github.com/ropensci/software-review/issues/593), [karel](https://github.com/ropensci/software-review/issues/620), [agroclimatico](https://github.com/ropensci/software-review/issues/599).
 
 ## Comunicar amablemente
 
-Como editor/a, escribir un comentario constructivo y amable notificando que el paquete esta fuera del alcance de rOpenSci.
+Como editor/a, escribir un comentario constructivo y amable notificando que el paquete está fuera del alcance de rOpenSci.
 
-A modo de ejemplo podes usar [karel](https://github.com/ropensci/software-review/issues/620), que fue revisado como excepción por el programa de campeone/as pero que normalmente esta fuera del alcance de las categorias de rOpenSci.
+A modo de ejemplo podés usar [karel](https://github.com/ropensci/software-review/issues/620), que fue revisado como excepción por el programa de campeones/as pero que normalmente está fuera del alcance de las categorías de rOpenSci.
 
 # Instalar pkgcheck [pkgcheck](https://docs.ropensci.org/pkgcheck/)
 
@@ -171,7 +177,7 @@ install.packages ("pkgcheck")
 
 # Preguntas y respuestas
 
-(10') Explorar los detalles del proceso para proponer software para revision y generar preguntas, sobre lo que vimos y lo que no vimos hoy:
+(10') Explorar los detalles del proceso para proponer software para revisión y generar preguntas, sobre lo que vimos y lo que no vimos hoy:
 
 - Explorar la [plantilla real de propuesta de software para revisión](https://github.com/ropensci/software-review/issues)
 - Explorar issues reales etiquetados con [0/presubmission](https://github.com/ropensci/software-review/issues?q=is%3Aissue%20label%3A0%2Fpresubmission)
@@ -180,16 +186,16 @@ install.packages ("pkgcheck")
 
 # Recursos
 
+- Repositorio de práctica: <https://github.com/maurolepore/software-review>
 - TODO documento colaborativo
-- [Codigo de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
+- [Código de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
 - Libro [Paquetes de rOpenSci: Desarrollo, mantenimiento y revisión por pares](https://devdevguide.netlify.app/es/index.es)
 - [pkgcheck](https://docs.ropensci.org/pkgcheck/)
-- [Repositorio de practica](https://github.com/maurolepore/software-review/issues)
-- Paquetes de campeone/as en español:
+- Paquetes de campeones/as en español:
   - [eph](https://github.com/ropensci/software-review/issues/593)
   - [karel](https://github.com/ropensci/software-review/issues/620)
   - [agroclimatico](https://github.com/ropensci/software-review/issues/599)
-- Blogs sobre el proceso de revision:
+- Blogs sobre el proceso de revisión:
   - [Revisión del software, perspectivas de un académico](https://ropensci.org/es/blog/2025/03/25/r-package-review/) (Alex Koiter, autor)
   - [Experiencias revisando paquetes de rOpenSci por primera vez](https://ropensci.org/es/blog/2017/09/08/first-review-experiences/) (Verena Haunschmid, revisora)
   - [Así que (no) crees que puedas revisar un paquete](https://ropensci.org/es/blog/2017/08/22/first-package-review/) (Mara Averick revisora)
@@ -197,7 +203,7 @@ install.packages ("pkgcheck")
 
 # Ejercicios
 
-## {{< fa edit >}} El proceso para proponer software para revision
+## {{< fa edit >}} El proceso para proponer software para revisión
 
 ```{mermaid}
 flowchart LR
@@ -209,13 +215,13 @@ flowchart LR
     E -->|No| G((5-Cerrar issue))
 ```
 
-a. ¿Excepcion?
+a. ¿Excepción?
 b. Enviar
 c. Abrir issue
 
-## {{< fa edit >}} El proceso para enviar software para revision
+## {{< fa edit >}} El proceso para enviar software para revisión
 
-El proceso para enviar software para revision
+El proceso para enviar software para revisión
 
 ```{mermaid}
 flowchart LR
@@ -229,21 +235,21 @@ flowchart LR
 a. Publicar
 b. Revisar
 
-## {{< fa edit >}} Comunicacion: Estructura
+## {{< fa edit >}} Comunicación: Estructura
 
 ### La estructura del feedback constructivo y amable
 
-- Como revisor/a, escribi una introduccion minima pero constructiva y amable como encabezado para una revision imaginaria.
+- Como revisor/a, escribí una introducción mínima pero constructiva y amable como encabezado para una revisión imaginaria.
 
-- Como autor/a, escribi una introduccion minima pero constructiva y amable como encabezado para tus respuestas imaginarias a las sugerencias de un/a revisor/a.
+- Como autor/a, escribí una introducción mínima pero constructiva y amable como encabezado para tus respuestas imaginarias a las sugerencias de un/a revisor/a.
 
 ## {{< fa edit >}} Reflexiones
 
 Escribir reflexiones que cuenten la historia de lo que vimos
 
-- Que? ej. Las actividades principales del proceso son ...
-- Quien? ej. Los roles que participan en la presubmisión son ...
-- Como? ej. El feedback debe ser ...
-- Donde? ej. Todo el proceso ocurre en ....
-- Por que? e.g. La revision por pares ayuda a ...
-- Cuando? ej. La evaluacion de alcance debe hacerse antes de ...
+- ¿Qué? ej. Las actividades principales del proceso son ...
+- ¿Quién? ej. Los roles que participan en la presubmisión son ...
+- ¿Cómo? ej. El feedback debe ser ...
+- ¿Dónde? ej. Todo el proceso ocurre en ....
+- ¿Por qué? e.g. La revisión por pares ayuda a ...
+- ¿Cuándo? ej. La evaluación de alcance debe hacerse antes de ...
