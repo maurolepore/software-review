@@ -1,5 +1,5 @@
 # software-review
 
-Repositorio para practicar procesos de revisión por pares según [ropensci/software-review](https://github.com/ropensci/software-review/issues).
+Repositorio para aprender sobre el proceso de [revisión de software por pares de rOpenSci](https://ropensci.org/es/software-review/).
 
 [Presentación](https://maurolepore.github.io/software-review/#/title-slide)
