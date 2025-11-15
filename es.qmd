@@ -1,6 +1,6 @@
 ---
 title: Taller de revisión de software por pares en rOpenSci
-author: Mauro Lepore
+author: <https://github.com/maurolepore/software-review>
 date: last-modified
 format:
   revealjs:
@@ -8,8 +8,6 @@ format:
     scrollable: true
     mermaid-format: svg
 ---
-
-# Introducción al proceso de punta a punta
 
 ## Objetivos principales
 
@@ -28,6 +26,8 @@ Día 2:
 - Proponer software para revision
 - Preguntas y respuestas
 - Instalar pkgcheck
+
+# Introducción al proceso de punta a punta
 
 ## Comparación con la academia
 
