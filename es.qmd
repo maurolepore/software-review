@@ -266,8 +266,7 @@ Seguimiento
 
 </details>
 
-
-# Pausa
+# Pausa 10'
 # Proponer software para revisión
 
 ## Abrir issue
