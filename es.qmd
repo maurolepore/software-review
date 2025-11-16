@@ -13,11 +13,10 @@ format:
 
 - Hola! Soy [Mauro](https://ropensci.org/author/mauro-lepore/) 👋
 - Este taller para [vos](https://ropensci.org/es/champions/) 🏅🇪🇸
-- [Recursos]
 
 ## Objetivos principales
 
-- Entender las etapas y cualidades más importantes
+- Familiarizarse con las etapas y cualidades del proceso
 - Practicar proponer software para revisión
 - Practicar enviar software para revisión
 
@@ -25,14 +24,14 @@ format:
 
 - Introducción al taller
 - Introducción al proceso de punta a punta
+- Pausa
 - Proponer software para revisión
-- Instalar pkgcheck
 - Preguntas y respuestas
 
 # Introducción al proceso de punta a punta
 
+- [Guía de desarrollo, mantenimiento y revisión por pares](https://devguide.ropensci.org/es/index.es.html)
 - [Código de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
-- [Paquetes de rOpenSci: Desarrollo, mantenimiento y revisión por pares](https://devguide.ropensci.org/es/index.es.html)
 
 ## Comparación con la academia
 
@@ -54,6 +53,30 @@ flowchart LR
     C -->|Si| D[4-Enviar]
     E -->|Si| D
     E -->|No| G((5-Cerrar issue))
+```
+
+## [pkgcheck](https://docs.ropensci.org/pkgcheck/)
+
+- Uso en un issue ([comandos del bot](https://devguide.ropensci.org/es/bot_cheatsheet.es.html))
+
+```r
+@ropensci-review-bot check package
+```
+
+- Ejemplo del resultado: [{eph}](https://github.com/ropensci/software-review/issues/593#issuecomment-1608404055)
+
+- Uso local
+
+```r
+  options (repos = c (
+    ropenscireviewtools = "https://ropensci-review-tools.r-universe.dev",
+    CRAN = "https://cloud.r-project.org"
+  ))
+  install.packages("pkgcheck")
+  
+  paquete <- "/camino/al/paquete"
+  resultados <- pkgcheck::pkgcheck(paquete)
+  summary(resultados)
 ```
 
 ## Enviar software para revisión
@@ -157,6 +180,8 @@ Seguimiento
 
 </details>
 
+
+# Pausa
 # Proponer software para revisión
 
 ## Abrir issue
@@ -168,12 +193,6 @@ Abrí un issue para proponer software en el [repositorio de práctica](https://g
 Como editor/a, escribir un comentario constructivo y amable notificando que el paquete está fuera del alcance de rOpenSci.
 
 A modo de ejemplo podés usar [karel](https://github.com/ropensci/software-review/issues/620), que fue revisado como excepción por el programa de campeones/as pero que normalmente está fuera del alcance de las categorías de rOpenSci.
-
-# Instalar pkgcheck [pkgcheck](https://docs.ropensci.org/pkgcheck/)
-
-```r
-install.packages ("pkgcheck")
-```
 
 # Preguntas y respuestas
 
