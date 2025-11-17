@@ -321,14 +321,14 @@ Usá tu propio paquete o cualquiera de estos:
 
 <br>
 
-- (5') Generar preguntas sobre el proceso de proponer software para revisión. Para inspirarte podés explorar:
+- Generar preguntas sobre el proceso de proponer software para revisión. Para inspirarte podés explorar:
 
   - [la plantilla real de propuesta de software para revisión](https://github.com/ropensci/software-review/issues)
   -  ["issues" reales etiquetados con 0/presubmission](https://github.com/ropensci/software-review/issues?q=is%3Aissue%20label%3A0%2Fpresubmission)
 
-- (5') Vota `+1` en 3 preguntas de otras personas
+- Vota con `+` en 3 preguntas de otras personas
 
-- (10') Respuestas
+- Respuestas
 
 ## Recursos
 
