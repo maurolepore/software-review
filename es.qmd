@@ -11,7 +11,7 @@ format:
 
 # Introducción al taller
 
-Sobre [ustedes](https://ropensci.org/es/champions/) 🏅🇪🇸 y sobre [mi](https://ropensci.org/author/mauro-lepore/) 👋.
+Sobre [ustedes](https://ropensci.org/es/champions/) 🏅🇪🇸 y sobre [mí](https://ropensci.org/author/mauro-lepore/) 👋.
 
 <br>
 <br>
@@ -42,14 +42,14 @@ Día 2
 
 - `00:00` Introducción al taller
 - `00:05` Introducción al proceso de punta a punta
-  - `00:10` Comparacion con la academia
+  - `00:10` Comparación con la academia
   - `00:20` Proponer y enviar software para revisión
   - `00:30` {pkgcheck}
-  - `00:40` Codigo de conducta y comunicacion
+  - `00:40` Código de conducta y comunicación
 - `00:55` Pausa
 - `01:05` Proponer software para revisión
   - `01:10` Abrir un "issue"
-  - `01:25` Comunicacion amable y constructiva
+  - `01:25` Comunicación amable y constructiva
 - `01:40` Preguntas y respuestas
 
 # Introducción al proceso de punta a punta
@@ -164,7 +164,7 @@ Ejemplo
 ```
 
 :::aside
-[Documentacion de {pkgcheck}](https://docs.ropensci.org/pkgcheck/)
+[Documentación de {pkgcheck}](https://docs.ropensci.org/pkgcheck/)
 :::
 
 ## Código de Conducta
@@ -215,7 +215,7 @@ Explica cómo y por qué el paquete encaja en estas categorías.
 
 `@editor/a`:
 
-> @autor/a gracias por tu consulta. El paquete parece muy interesante pero lamentablemente esta fuera del alcance de las categorias actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.
+> @autor/a gracias por tu consulta. El paquete parece muy interesante pero lamentablemente está fuera del alcance de las categorias actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.
 
 </details>
 
@@ -223,11 +223,11 @@ Explica cómo y por qué el paquete encaja en estas categorías.
 
 `@editor/a`:
 
-> @autor/a gracias por tu consulta. El paquete parece muy interesante pero lamentablemente esta fuera del alcance de las categorias actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.
+> @autor/a gracias por tu consulta. El paquete parece muy interesante pero lamentablemente está fuera del alcance de las categorias actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.
 
-> Te recomendaria revisar y publicar el paquete en el [Journal of Open Source Software](https://joss.theoj.org/).
+> Te recomendaría revisar y publicar el paquete en el [Journal of Open Source Software](https://joss.theoj.org/).
 
-> Cuando tengas otro paquete dentro de nuestro alcance por favor volve a contactarnos.
+> Cuando tengas otro paquete dentro de nuestro alcance por favor volvé a contactarnos.
 
 </details>
 
@@ -239,7 +239,7 @@ Explica cómo y por qué el paquete encaja en estas categorías.
 
 <br>
 
-Ejemplos de revisión y resupesta en {agroclimatico}
+Ejemplos de revisión y respuesta en {agroclimatico}
 
 <details><summary>[Revisión de `@VeruGHub` (revisora)](https://github.com/ropensci/software-review/issues/599#issuecomment-1936698026)</summary>
 
@@ -259,7 +259,7 @@ Seguridad
 
 > En primer lugar, muchas gracias @pmnatural y @VeruGHub por la revisión y los comentarios.
 
-Sugerencia/Sentancia
+Sugerencia/Sentencia
 
 > Incorporé los comentarios y sugerencias al paquete.
 
@@ -309,19 +309,19 @@ Usá tu propio paquete o cualquiera de estos:
 
 <br>
 
-- [{karel}](https://docs.ropensci.org/karel/) esta fuera del alcance de las categorías de rOpenSci ([fue revisado](https://github.com/ropensci/software-review/issues/620) como excepción por el programa de campeones/as)
+- [{karel}](https://docs.ropensci.org/karel/) está fuera del alcance de las categorías de rOpenSci ([fue revisado](https://github.com/ropensci/software-review/issues/620) como excepción por el programa de campeones/as)
 
-- Asumi el rol de editor/a
+- Asumí el rol de editor/a
 
-- Escribi un comentario amable y constructivo, notificando al autor que el paquete está fuera del alcance de rOpenSci
+- Escribí un comentario amable y constructivo, notificando al autor que el paquete está fuera del alcance de rOpenSci
 
-- Recomendando su revision y publicacion en el ["Journal of Open Source Education"](http://jose.theoj.org/)
+- Recomendando su revisión y publicación en el ["Journal of Open Source Education"](http://jose.theoj.org/)
 
 # Preguntas y respuestas
 
 <br>
 
-- (5') Generar preguntas sobre el proceso de proponer software para revision. Para inspirarte podes explorar:
+- (5') Generar preguntas sobre el proceso de proponer software para revisión. Para inspirarte podés explorar:
 
   - [la plantilla real de propuesta de software para revisión](https://github.com/ropensci/software-review/issues)
   -  ["issues" reales etiquetados con 0/presubmission](https://github.com/ropensci/software-review/issues?q=is%3Aissue%20label%3A0%2Fpresubmission)
