@@ -11,7 +11,7 @@ format:
 
 # Introducción al taller
 
-Hola, soy [Mauro](https://ropensci.org/author/mauro-lepore/) 👋. Este taller para [vos](https://ropensci.org/es/champions/) 🏅🇪🇸
+Sobre [ustedes](https://ropensci.org/es/champions/) 🏅🇪🇸 y sobre [mi](https://ropensci.org/author/mauro-lepore/) 👋.
 
 <br>
 <br>
@@ -26,6 +26,8 @@ Licencia: [Atribución/Reconocimiento-NoComercial 4.0 Internacional](https://cre
 </sub>
 
 ## Objetivos principales
+
+<br>
 
 Día 1
 
@@ -52,19 +54,35 @@ Día 2
 
 # Introducción al proceso de punta a punta
 
-La forma en la que trabajamos con [software](https://devguide.ropensci.org/es/index.es.html) y [personas](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
+Sobre cómo trabajamos con [software](https://devguide.ropensci.org/es/index.es.html) y [personas](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
 
 ## Comparación con la academia
 
-En la academia y en rOpenSci ...
+<br>
+
+En la academia y en rOpenSci:
 
 - ¿Cuál es la motivación de un/a autor/a o revisor/a?
 - ¿Qué otros roles participan?
-- ¿Qué medio se usa para la comunicación?
 - ¿Cuándo se acepta o rechaza un trabajo?
-- ¿Cómo es la comunicación?
+- ¿En qué plataforma se intercambian comentarios?
+- ¿Cómo es la comunicación esperada?
 
-## Proponer software para revisión
+## [Proponer software para revisión](https://github.com/ropensci/software-review/issues)
+
+```{mermaid}
+flowchart LR
+    B((1-___________))
+    B --> C{2-¿Dentro del alcance?}
+    C -->|No| E{3-___________}
+    C -->|Si| D[4-_______]
+    E -->|Si| D
+    E -->|No| G((5-Cerrar issue))
+```
+
+a. ¿Excepción?  / b. Enviar / c. Abrir issue
+
+<details>
 
 ```{mermaid}
 flowchart LR
@@ -76,11 +94,22 @@ flowchart LR
     E -->|No| G((5-Cerrar issue))
 ```
 
-:::aside
-[Paquetes de rOpenSci: Desarrollo, mantenimiento y revisión por pares](https://devdevguide.netlify.app/es/index.es)
-:::
+</details>
 
-## Enviar software para revisión
+## [Enviar software para revisión](https://github.com/ropensci/software-review/issues)
+
+```{mermaid}
+flowchart LR
+    B((1-Abrir issue))
+    B --> C[2-_______]
+    C --> D{3-¿Listo?}
+    D -->|No| C
+    D -->|Si| E((4-________))
+```
+
+a. Publicar / b. Revisar
+
+<details>
 
 ```{mermaid}
 flowchart LR
@@ -91,9 +120,7 @@ flowchart LR
     D -->|Si| E((Publicar))
 ```
 
-:::aside
-[Paquetes de rOpenSci: Desarrollo, mantenimiento y revisión por pares](https://devdevguide.netlify.app/es/index.es)
-:::
+</details>
 
 ## {pkgcheck}: Uso en un "issue"
 
@@ -166,105 +193,94 @@ Ofrecer
 
 Explica cómo y por qué el paquete encaja en estas categorías.
 
-> `@autor/a`: No encontré una categoría que se ajustara perfectamente, por lo que creé [categoría propia].
+> `@autor/a`: No encontré una categoría que se ajustara perfectamente, por lo que creé una categoría nueva.
 
-`@editor/a`
+**Del 1 al 10, cuantos puntos le das a cada respuesta?**
 
 <details><summary>Respuesta 1</summary>
 
-> @autor/a,
+`@editor/a`:
 
+> @autor/a,  
 > Lamentablemente nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.
 
 </details>
 
 <details><summary>Respuesta 2</summary>
 
-> @autor/a gracias por tu consulta. El paquete parece muy interesante.
+`@editor/a`:
 
-> Lamentablemente nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.
+> @autor/a gracias por tu consulta. El paquete parece muy interesante pero lamentablemente esta fuera del alcance de las categorias actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.
 
 </details>
 
 <details><summary>Respuesta 3</summary>
 
-> @autor/a gracias por tu consulta. El paquete parece muy interesante.
+`@editor/a`:
 
-> Lamentablemente nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.
+> @autor/a gracias por tu consulta. El paquete parece muy interesante pero lamentablemente esta fuera del alcance de las categorias actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.
 
-> Sin embargo, si cambiaras algunos elementos de la implementacion actual el paquete podría encajar en [categoría alternativa]. (Cambios sugeridos ...)
+> Te recomendaria revisar y publicar el paquete en el [Journal of Open Source Software](https://joss.theoj.org/).
 
-> Que te parece esa idea?
+> Cuando tengas otro paquete dentro de nuestro alcance por favor volve a contactarnos.
 
 </details>
+
+<sub>
+[Responder a las presentaciones fuera del ámbito de aplicación](https://devdevguide.netlify.app/es/softwarereview_editor.es#outofscoperesponse)
+</sub>
 
 ## Comunicación amable y constructiva
 
 Mas ejemplos
 
-{eph}
-
-<details><summary>[Revisión de `@guadag12`](https://github.com/ropensci/software-review/issues/593#issuecomment-1709968472)</summary>
-
-Seguridad
-
-> Antes que nada, felicitaciones por el paquete. ... En términos generales funciona muy bien, corre rápido, es simple de usar y tiene mucha información. 
-
-Sugerencia
-
-> Ahora sí, procedo a la review siguiendo las recomendaciones de rOpenSci:
-> ...
-> De todo lo que mencioné tal vez le prestaría atención a dos aspectos:
-> - Los ejemplos de las funciones que mencionaba arriba. ...
-> - Los test unitarios en las funciones que consideren más relevantes los agregaría. ...
-
-Seguimiento
-
-> Una vez que eso está, creo que estamos para avanzar 😊. Gran trabajo,
-
-</details>
-
-<details><summary>[Respuesta de `@caropradier`](https://github.com/ropensci/software-review/issues/593#issuecomment-1714421144)</summary>
-
-Seguridad
-
-> @lidefi87 gracias de nuevo por tus esfuerzos!
-
-Sugerencia
-
-> Respecto al nombre de las funciones, intentaría no hacer modificaciones mayores para no perturbar el flujo de trabajo de nuestros usuarios actuales (aproximadamente 30 mil personas usan el paquete y quisiera evitar generarles inconvenientes si no se trata de algo fundamental para el funcionamiento del paquete). No obstante, estoy de acuerdo con que se trata de una buena práctica, y lo tendré presente al incorporar nuevas funciones.
-
-</details>
-
 {agroclimatico}
 
-<details><summary>[Revisión de `@VeruGHub`](https://github.com/ropensci/software-review/issues/599#issuecomment-1936698026)</summary>
+<details><summary>[Revisión de `@VeruGHub` (revisora)](https://github.com/ropensci/software-review/issues/599#issuecomment-1936698026)</summary>
 
 Seguridad
 
-> En primer lugar, quiero agradecer la oportunidad de revisar este paquete y espero que los comentarios sirvan para mejorar en los puntos que los autores consideren oportunos. Creo que los autores han hecho un gran trabajo compilando las funciones relacionadas con la gestión de datos climáticos que son útiles para el INTA.
+> En primer lugar, quiero agradecer la oportunidad de revisar este paquete y espero que los comentarios sirvan para mejorar en los puntos que los autores consideren oportunos.
 
-Sugerencia
+Sugerencia/Sentencia
 
 > Creo que algunos aspectos formales de la documentación pueden ser mejorados. Para empezar, la funcionalidad del paquete no está completamente definida en la documentación (Readme) ... Mejorar estas descripciones e incluir programación defensiva relativa a los argumentos (en general faltante) ayudaría mucho a los usuarios.
 
 </details>
 
-<details><summary>[Respuesta de `@paocorrales`](https://github.com/ropensci/software-review/issues/599#issuecomment-2143389578)</summary>
+<details><summary>[Respuesta de `@paocorrales` (autora)](https://github.com/ropensci/software-review/issues/599#issuecomment-2143389578)</summary>
 
 Seguridad
 
-> En primer lugar, muchas gracias @pmnatural y @VeruGHub por la revisión y los comentarios, y a @Pakillo por ordenarlos y organizar todo.
+> En primer lugar, muchas gracias @pmnatural y @VeruGHub por la revisión y los comentarios.
 
-Sugerencia
+Sugerencia/Sentancia
 
-> Incorporé los comentarios y sugerencias al paquete. ...
+> Incorporé los comentarios y sugerencias al paquete.
 
 Seguimiento
 
 > Espero no haberme olvidado de nada, aguardo sus comentarios!
 
 </details>
+
+{eph}
+
+<details><summary>[Respuesta de `@caropradier` (autora)](https://github.com/ropensci/software-review/issues/593#issuecomment-1714421144)</summary>
+
+Seguridad
+
+> @lidefi87 gracias de nuevo por tus esfuerzos!
+
+Sugerencia/Sentencia
+
+> Respecto al nombre de las funciones, intentaría no hacer modificaciones mayores para no perturbar el flujo de trabajo de nuestros usuarios actuales (aproximadamente 30 mil personas usan el paquete y quisiera evitar generarles inconvenientes si no se trata de algo fundamental para el funcionamiento del paquete). No obstante, estoy de acuerdo con que se trata de una buena práctica, y lo tendré presente al incorporar nuevas funciones.
+
+</details>
+
+<sub>
+[Responder a las preguntas de quienes revisan](https://devdevguide.netlify.app/es/softwarereview_editor.es#reviewersupport)
+</sub>
 
 # Pausa 10'
 # Proponer software para revisión
@@ -288,40 +304,7 @@ A modo de ejemplo podés usar [karel](https://github.com/ropensci/software-revie
 
 (10') Respuestas.
 
-
 # Ejercicios
-
-## {{< fa edit >}} El proceso para proponer software para revisión
-
-```{mermaid}
-flowchart LR
-    B((1-___________))
-    B --> C{2-¿Dentro del alcance?}
-    C -->|No| E{3-___________}
-    C -->|Si| D[4-_______]
-    E -->|Si| D
-    E -->|No| G((5-Cerrar issue))
-```
-
-a. ¿Excepción?
-b. Enviar
-c. Abrir issue
-
-## {{< fa edit >}} El proceso para enviar software para revisión
-
-El proceso para enviar software para revisión
-
-```{mermaid}
-flowchart LR
-    B((1-Abrir issue))
-    B --> C[2-_______]
-    C --> D{3-¿Listo?}
-    D -->|No| C
-    D -->|Si| E((4-________))
-```
-
-a. Publicar
-b. Revisar
 
 ## {{< fa edit >}} Comunicación: Estructura
 
@@ -342,7 +325,6 @@ Escribir reflexiones que cuenten la historia de lo que vimos
 - ¿Por qué? e.g. La revisión por pares ayuda a ...
 - ¿Cuándo? ej. La evaluación de alcance debe hacerse antes de ...
 
-
 ## Recursos
 
 - FIXME Repositorio de práctica: <https://github.com/maurolepore/software-review>
@@ -359,3 +341,6 @@ Escribir reflexiones que cuenten la historia de lo que vimos
   - [Experiencias revisando paquetes de rOpenSci por primera vez](https://ropensci.org/es/blog/2017/09/08/first-review-experiences/) (Verena Haunschmid, revisora)
   - [Así que (no) crees que puedas revisar un paquete](https://ropensci.org/es/blog/2017/08/22/first-package-review/) (Mara Averick revisora)
 - Blog sobre comunicación en open source: [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/)
+- [Guía para quienes crean paquetes](https://devdevguide.netlify.app/es/softwarereview_author.es)
+- [Guía para quienes hacen una revisión](https://devdevguide.netlify.app/es/softwarereview_reviewer.es)
+- [Voluntariarte para revisar](https://devdevguide.netlify.app/es/softwarereview_reviewer.es#volunteering-as-a-reviewer)
