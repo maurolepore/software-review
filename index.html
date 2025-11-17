@@ -6,14 +6,12 @@
 <script src="es_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="es_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="es_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="es_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="es_files/libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="es_files/libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<link href="es_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.31">
 
   <meta name="author" content="Mauro Lepore">
-  <meta name="dcterms.date" content="2025-11-12">
-  <title>Taller de revisión de software por pares en rOpenSci</title>
+  <meta name="dcterms.date" content="2025-11-16">
+  <title>Taller de revisión de software por pares de rOpenSci</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -198,7 +196,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Taller de revisión de software por pares en rOpenSci</h1>
+  <h1 class="title">Taller de revisión de software por pares de rOpenSci</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -208,300 +206,75 @@ Mauro Lepore
 </div>
 </div>
 
-  <p class="date">2025-11-12</p>
+  <p class="date">2025-11-16</p>
 </section>
 <section>
-<section id="introducción-al-proceso-de-punta-a-punta" class="title-slide slide level1 center">
-<h1>Introducción al proceso de punta a punta</h1>
-
+<section id="introducción-al-taller" class="title-slide slide level1 center">
+<h1>Introducción al taller</h1>
+<p>Sobre <a href="https://ropensci.org/es/champions/">ustedes</a> 🏅🇪🇸 y sobre <a href="https://ropensci.org/author/mauro-lepore/">mí</a> 👋.</p>
+<p><br> <br> <br> <br> <br> <br> <br></p>
+<p><sub> Licencia: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">Atribución/Reconocimiento-NoComercial 4.0 Internacional</a> </sub></p>
 </section>
 <section id="objetivos-principales" class="slide level2">
 <h2>Objetivos principales</h2>
-<p>Día 1:</p>
+<p><br></p>
+<p>Día 1</p>
 <ul>
-<li>Entender las etapas y cualidades mas importantes del proceso de revision por pares en rOpenSci</li>
-<li>Ejercitar el proceso para proponer software para revision</li>
+<li>Familiarizarse con las etapas y cualidades del proceso</li>
+<li>Practicar proponer software para revisión</li>
 </ul>
-<p>Día 2:</p>
+<p>Día 2</p>
 <ul>
-<li>Ejercitar el proceso para enviar software para revision</li>
+<li>Practicar enviar software para revisión</li>
 </ul>
 </section>
-<section id="plan-para-el-día-1" class="slide level2">
-<h2>Plan para el día 1</h2>
+<section id="plan-para-hoy" class="slide level2">
+<h2>Plan para hoy</h2>
 <ul>
-<li>Introducción al proceso de punta a punta</li>
-<li>Proponer software para revision</li>
-<li>Preguntas y respuestas</li>
-<li>Instalar pkgcheck</li>
+<li><code>00:00</code> Introducción al taller</li>
+<li><code>00:05</code> Introducción al proceso de punta a punta
+<ul>
+<li><code>00:10</code> Comparación con la academia</li>
+<li><code>00:20</code> Proponer y enviar software para revisión</li>
+<li><code>00:30</code> {pkgcheck}</li>
+<li><code>00:40</code> Código de conducta y comunicación</li>
+</ul></li>
+<li><code>00:55</code> Pausa</li>
+<li><code>01:05</code> Proponer software para revisión
+<ul>
+<li><code>01:10</code> Abrir un “issue”</li>
+<li><code>01:25</code> Comunicación amable y constructiva</li>
+</ul></li>
+<li><code>01:40</code> Preguntas y respuestas</li>
 </ul>
+</section></section>
+<section>
+<section id="introducción-al-proceso-de-punta-a-punta" class="title-slide slide level1 center">
+<h1>Introducción al proceso de punta a punta</h1>
+<p>Sobre cómo trabajamos con <a href="https://devguide.ropensci.org/es/index.es.html">software</a> y <a href="https://ropensci.org/es/c%C3%B3digo-de-conducta/">personas</a></p>
 </section>
 <section id="comparación-con-la-academia" class="slide level2">
 <h2>Comparación con la academia</h2>
-<p>En la academia y en rOpenSci …</p>
+<p><br></p>
+<p>En la academia y en rOpenSci:</p>
 <ul>
-<li>¿Cuál es la motivacion de un/a autor/a o revisor/a?</li>
+<li>¿Cuál es la motivación de un/a autor/a o revisor/a?</li>
 <li>¿Qué otros roles participan?</li>
-<li>¿Qué medio se usa para la comunicación?</li>
 <li>¿Cuándo se acepta o rechaza un trabajo?</li>
-<li>¿Cómo es la comunicación?</li>
+<li>¿En qué plataforma se intercambian comentarios?</li>
+<li>¿Cómo es la comunicación esperada?</li>
 </ul>
 </section>
-<section id="proponer-software-para-revision" class="slide level2">
-<h2>Proponer software para revision</h2>
+<section id="proponer-software-para-revisión" class="slide level2 scrollable">
+<h2><a href="https://github.com/ropensci/software-review/issues">Proponer software para revisión</a></h2>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 793.90625 264.36328125" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-1" height="480">
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 834.015625 267.5703125" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-1" height="480">
 <style>#mermaid-figure-1{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-figure-1 .error-icon{fill:#552222;}#mermaid-figure-1 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-1 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-1 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-1 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-1 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-1 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-1 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-1 .marker{fill:#333333;stroke:#333333;}#mermaid-figure-1 .marker.cross{stroke:#333333;}#mermaid-figure-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-1 p{margin:0;}#mermaid-figure-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-figure-1 .cluster-label text{fill:#333;}#mermaid-figure-1 .cluster-label span{color:#333;}#mermaid-figure-1 .cluster-label span p{background-color:transparent;}#mermaid-figure-1 .label text,#mermaid-figure-1 span{fill:#333;color:#333;}#mermaid-figure-1 .node rect,#mermaid-figure-1 .node circle,#mermaid-figure-1 .node ellipse,#mermaid-figure-1 .node polygon,#mermaid-figure-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-figure-1 .rough-node .label text,#mermaid-figure-1 .node .label text{text-anchor:middle;}#mermaid-figure-1 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-1 .node .label{text-align:center;}#mermaid-figure-1 .node.clickable{cursor:pointer;}#mermaid-figure-1 .arrowheadPath{fill:#333333;}#mermaid-figure-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-figure-1 .flowchart-link{stroke:#333333;fill:none;}#mermaid-figure-1 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-figure-1 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-figure-1 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-figure-1 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-figure-1 .cluster text{fill:#333;}#mermaid-figure-1 .cluster span{color:#333;}#mermaid-figure-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-1 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-figure-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
-<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016530_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016530_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016530_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016530_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763001016530_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763001016530_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#mermaid-1763001016530_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_0" d="M112.422,115.648L116.589,115.648C120.755,115.648,129.089,115.648,135.38,115.69C141.672,115.732,145.922,115.815,149.505,115.885C153.089,115.956,156.006,116.013,157.464,116.041L158.923,116.07"></path><path marker-end="url(#mermaid-1763001016530_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_E_1" d="M345.695,148.672L356.765,153.417C367.836,158.163,389.976,167.654,403.955,172.441C417.934,177.228,423.75,177.311,428.9,177.385C434.05,177.459,438.533,177.523,440.774,177.555L443.016,177.587"></path><path marker-end="url(#mermaid-1763001016530_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_D_2" d="M338.484,76.413L350.756,69.101C363.028,61.789,387.573,47.164,418.243,39.851C448.914,32.539,485.711,32.539,522.508,32.539C559.305,32.539,596.102,32.539,617.367,33.029C638.632,33.518,644.365,34.497,649.441,35.364C654.516,36.23,658.935,36.985,661.145,37.362L663.354,37.739"></path><path marker-end="url(#mermaid-1763001016530_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_D_3" d="M570.269,148.913L580.707,142.434C591.145,135.954,612.022,122.995,626.84,113.64C641.659,104.286,650.419,98.536,658.622,93.153C666.825,87.769,674.471,82.752,678.294,80.243L682.117,77.734"></path><path marker-end="url(#mermaid-1763001016530_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_G_4" d="M586.372,190.273L594.126,191.751C601.881,193.23,617.39,196.187,628.184,197.666C638.979,199.145,645.06,199.145,650.474,199.145C655.888,199.145,660.635,199.145,663.009,199.145L665.383,199.145"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g><g transform="translate(412.1171875, 177.14453125)" class="edgeLabel"><g transform="translate(-9.3984375, -12)" class="label"><foreignobject height="24" width="18.796875">
-<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel">
-<p>
-No
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(522.5078125, 32.5390625)" class="edgeLabel"><g transform="translate(-6.1328125, -12)" class="label"><foreignobject height="24" width="12.265625">
-<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel">
-<p>
-Si
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(632.8984375, 110.03515625)" class="edgeLabel"><g transform="translate(-6.1328125, -12)" class="label"><foreignobject height="24" width="12.265625">
-<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel">
-<p>
-Si
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(632.8984375, 199.14453125)" class="edgeLabel"><g transform="translate(-9.3984375, -12)" class="label"><foreignobject height="24" width="18.796875">
-<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel">
-<p>
-No
-</p>
-</span>
-</div>
-</foreignobject></g></g></g><g class="nodes"><g transform="translate(60.2109375, 115.6484375)" id="flowchart-B-0" class="node default"><circle cy="0" cx="0" r="52.2109375" style="" class="basic label-container"></circle><g transform="translate(-44.7109375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="89.421875">
-<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">
-<p>
-1-Abrir issue
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(270.0703125, 115.6484375)" id="flowchart-C-2" class="node default"><polygon transform="translate(-107.6484375,107.6484375)" class="label-container" points="107.6484375,0 215.296875,-107.6484375 107.6484375,-215.296875 0,-107.6484375"></polygon><g transform="translate(-80.6484375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="161.296875">
-<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">
-<p>
-2-¿Dentro del alcance?
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(522.5078125, 177.14453125)" id="flowchart-E-4" class="node default"><polygon transform="translate(-75.9921875,75.9921875)" class="label-container" points="75.9921875,0 151.984375,-75.9921875 75.9921875,-151.984375 0,-75.9921875"></polygon><g transform="translate(-48.9921875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="97.984375">
-<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">
-<p>
-3-¿Excepcion?
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(726.6015625, 48.5390625)" id="flowchart-D-6" class="node default"><rect height="54" width="118.609375" y="-27" x="-59.3046875" data-et="node" data-id="abc" style="" class="basic label-container"></rect><g transform="translate(-29.3046875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="58.609375">
-<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">
-<p>
-4-Enviar
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(726.6015625, 199.14453125)" id="flowchart-G-10" class="node default"><circle cy="0" cx="0" r="57.21875" style="" class="basic label-container"></circle><g transform="translate(-49.71875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="99.4375">
-<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">
-<p>
-5-Cerrar issue
-</p>
-</span>
-</div>
-</foreignobject></g></g></g></g></g>
-</svg>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="enviar-software-para-revision" class="slide level2">
-<h2>Enviar software para revision</h2>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 614.140625 130.09375" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-4" height="480">
-<style>#mermaid-figure-4{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-figure-4 .error-icon{fill:#552222;}#mermaid-figure-4 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-4 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-4 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-4 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-4 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-4 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-4 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-4 .marker{fill:#333333;stroke:#333333;}#mermaid-figure-4 .marker.cross{stroke:#333333;}#mermaid-figure-4 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-4 p{margin:0;}#mermaid-figure-4 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-figure-4 .cluster-label text{fill:#333;}#mermaid-figure-4 .cluster-label span{color:#333;}#mermaid-figure-4 .cluster-label span p{background-color:transparent;}#mermaid-figure-4 .label text,#mermaid-figure-4 span{fill:#333;color:#333;}#mermaid-figure-4 .node rect,#mermaid-figure-4 .node circle,#mermaid-figure-4 .node ellipse,#mermaid-figure-4 .node polygon,#mermaid-figure-4 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-figure-4 .rough-node .label text,#mermaid-figure-4 .node .label text{text-anchor:middle;}#mermaid-figure-4 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-4 .node .label{text-align:center;}#mermaid-figure-4 .node.clickable{cursor:pointer;}#mermaid-figure-4 .arrowheadPath{fill:#333333;}#mermaid-figure-4 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-figure-4 .flowchart-link{stroke:#333333;fill:none;}#mermaid-figure-4 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-figure-4 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-figure-4 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-figure-4 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-4 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-figure-4 .cluster text{fill:#333;}#mermaid-figure-4 .cluster span{color:#333;}#mermaid-figure-4 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-4 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-figure-4 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
-<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016855_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016855_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016855_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016855_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763001016855_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763001016855_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#mermaid-1763001016855_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_0" d="M112.422,65.047L116.589,65.047C120.755,65.047,129.089,65.047,135.339,65.047C141.589,65.047,145.755,65.047,149.255,65.047C152.755,65.047,155.589,65.047,157.005,65.047L158.422,65.047"></path><path marker-end="url(#mermaid-1763001016855_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_D_1" d="M287.578,54.722L293.311,53.776C299.044,52.83,310.51,50.939,319.86,50.66C329.209,50.381,336.441,51.715,343.018,52.928C349.594,54.142,355.515,55.234,358.476,55.78L361.436,56.326"></path><path marker-end="url(#mermaid-1763001016855_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_D_C_2" d="M365.37,74.042L358.138,75.209C350.906,76.377,336.441,78.712,326.342,79.406C316.243,80.101,310.51,79.155,305.435,78.318C300.36,77.48,295.942,76.752,293.734,76.387L291.525,76.023"></path><path marker-end="url(#mermaid-1763001016855_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_D_E_3" d="M470.969,65.547L476.074,65.464C481.18,65.38,491.391,65.214,499.09,65.13C506.79,65.047,511.979,65.047,516.501,65.047C521.023,65.047,524.879,65.047,526.807,65.047L528.734,65.047"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
-<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel"></span>
-</div>
-</foreignobject></g></g><g transform="translate(321.9765625, 81.046875)" class="edgeLabel"><g transform="translate(-9.3984375, -12)" class="label"><foreignobject height="24" width="18.796875">
-<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel">
-<p>
-No
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(501.6015625, 65.046875)" class="edgeLabel"><g transform="translate(-6.1328125, -12)" class="label"><foreignobject height="24" width="12.265625">
-<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="edgeLabel">
-<p>
-Si
-</p>
-</span>
-</div>
-</foreignobject></g></g></g><g class="nodes"><g transform="translate(60.2109375, 65.046875)" id="flowchart-B-0" class="node default"><circle cy="0" cx="0" r="52.2109375" style="" class="basic label-container"></circle><g transform="translate(-44.7109375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="89.421875">
-<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">
-<p>
-1-Abrir issue
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(225, 65.046875)" id="flowchart-C-2" class="node default"><rect height="54" width="125.15625" y="-27" x="-62.578125" data-et="node" data-id="abc" style="" class="basic label-container"></rect><g transform="translate(-32.578125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="65.15625">
-<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">
-<p>
-2-Revisar
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(413.421875, 65.046875)" id="flowchart-D-4" class="node default"><polygon transform="translate(-57.046875,57.046875)" class="label-container" points="57.046875,0 114.09375,-57.046875 57.046875,-114.09375 0,-57.046875"></polygon><g transform="translate(-30.046875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="60.09375">
-<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">
-<p>
-3-¿Listo?
-</p>
-</span>
-</div>
-</foreignobject></g></g><g transform="translate(569.4375, 65.046875)" id="flowchart-E-8" class="node default"><circle cy="0" cx="0" r="36.703125" style="" class="basic label-container"></circle><g transform="translate(-29.203125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="58.40625">
-<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
-<span class="nodeLabel">
-<p>
-Publicar
-</p>
-</span>
-</div>
-</foreignobject></g></g></g></g></g>
-</svg>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="la-comunicación-en-ropensci-codigo-de-conducta" class="slide level2">
-<h2>La comunicación en rOpenSci: <a href="https://ropensci.org/es/c%C3%B3digo-de-conducta/">Codigo de Conducta</a></h2>
-<ul>
-<li>La comunidad es nuestro mejor activo</li>
-<li>Nuestra diversidad es nuestra fortaleza</li>
-<li>No toleramos ningún tipo de acoso</li>
-</ul>
-</section>
-<section id="la-comunicación-en-ropensci-estructura" class="slide level2">
-<h2>La comunicación en rOpenSci: Estructura</h2>
-<p>Ofrecer:</p>
-<ul>
-<li>Seguridad</li>
-<li>Sugerencia</li>
-<li>Seguimiento</li>
-</ul>
-</section>
-<section id="la-comunicación-en-ropensci-ejemplos" class="slide level2">
-<h2>La comunicación en rOpenSci: Ejemplos</h2>
-<p>TODO link ejemplo</p>
-</section></section>
-<section>
-<section id="proponer-software-para-revision-1" class="title-slide slide level1 center">
-<h1>Proponer software para revision</h1>
-
-</section>
-<section id="abrir-issue" class="slide level2">
-<h2>Abrir issue</h2>
-<p>Abrí un issue para proponer software en el <a href="https://github.com/maurolepore/software-review/issues">repositorio de practica</a>. Podés usar tu paquete o cualquiera de estos: <a href="https://github.com/ropensci/software-review/issues/593">eph</a>, <a href="https://github.com/ropensci/software-review/issues/620">karel</a>, <a href="https://github.com/ropensci/software-review/issues/599">agroclimatico</a>.</p>
-</section>
-<section id="comunicar-amablemente" class="slide level2">
-<h2>Comunicar amablemente</h2>
-<p>Como editor/a, escribir un comentario constructivo y amable notificando que el paquete esta fuera del alcance de rOpenSci.</p>
-<p>A modo de ejemplo podes usar <a href="https://github.com/ropensci/software-review/issues/620">karel</a>, que fue revisado como excepción por el programa de campeone/as pero que normalmente esta fuera del alcance de las categorias de rOpenSci.</p>
-</section></section>
-<section id="instalar-pkgcheck-pkgcheck" class="title-slide slide level1 center">
-<h1>Instalar pkgcheck <a href="https://docs.ropensci.org/pkgcheck/">pkgcheck</a></h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">install.packages</span> (<span class="st">"pkgcheck"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-
-<section id="preguntas-y-respuestas" class="title-slide slide level1 center">
-<h1>Preguntas y respuestas</h1>
-<p>(10’) Explorar los detalles del proceso para proponer software para revision y generar preguntas, sobre lo que vimos y lo que no vimos hoy:</p>
-<ul>
-<li>Explorar la <a href="https://github.com/ropensci/software-review/issues">plantilla real de propuesta de software para revisión</a></li>
-<li>Explorar issues reales etiquetados con <a href="https://github.com/ropensci/software-review/issues?q=is%3Aissue%20label%3A0%2Fpresubmission">0/presubmission</a></li>
-</ul>
-<p>(10’) Respuestas.</p>
-</section>
-
-<section id="recursos" class="title-slide slide level1 center">
-<h1>Recursos</h1>
-<ul>
-<li>TODO documento colaborativo</li>
-<li><a href="https://ropensci.org/es/c%C3%B3digo-de-conducta/">Codigo de Conducta</a></li>
-<li>Libro <a href="https://devdevguide.netlify.app/es/index.es">Paquetes de rOpenSci: Desarrollo, mantenimiento y revisión por pares</a></li>
-<li><a href="https://docs.ropensci.org/pkgcheck/">pkgcheck</a></li>
-<li><a href="https://github.com/maurolepore/software-review/issues">Repositorio de practica</a></li>
-<li>Paquetes de campeone/as en español:
-<ul>
-<li><a href="https://github.com/ropensci/software-review/issues/593">eph</a></li>
-<li><a href="https://github.com/ropensci/software-review/issues/620">karel</a></li>
-<li><a href="https://github.com/ropensci/software-review/issues/599">agroclimatico</a></li>
-</ul></li>
-<li>Blogs sobre el proceso de revision:
-<ul>
-<li><a href="https://ropensci.org/es/blog/2025/03/25/r-package-review/">Revisión del software, perspectivas de un académico</a> (Alex Koiter, autor)</li>
-<li><a href="https://ropensci.org/es/blog/2017/09/08/first-review-experiences/">Experiencias revisando paquetes de rOpenSci por primera vez</a> (Verena Haunschmid, revisora)</li>
-<li><a href="https://ropensci.org/es/blog/2017/08/22/first-package-review/">Así que (no) crees que puedas revisar un paquete</a> (Mara Averick revisora)</li>
-</ul></li>
-<li>Blog sobre comunicación en open source: <a href="https://snarky.ca/setting-expectations-for-open-source-participation/">Setting expectations for open source participation</a></li>
-</ul>
-</section>
-
-<section>
-<section id="ejercicios" class="title-slide slide level1 center">
-<h1>Ejercicios</h1>
-
-</section>
-<section id="el-proceso-para-proponer-software-para-revision" class="slide level2 scrollable">
-<h2><i class="fa-solid fa-edit" aria-label="edit"></i> El proceso para proponer software para revision</h2>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 834.015625 267.5703125" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-3" height="480">
-<style>#mermaid-figure-3{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-figure-3 .error-icon{fill:#552222;}#mermaid-figure-3 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-3 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-3 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-3 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-3 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-3 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-3 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-3 .marker{fill:#333333;stroke:#333333;}#mermaid-figure-3 .marker.cross{stroke:#333333;}#mermaid-figure-3 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-3 p{margin:0;}#mermaid-figure-3 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-figure-3 .cluster-label text{fill:#333;}#mermaid-figure-3 .cluster-label span{color:#333;}#mermaid-figure-3 .cluster-label span p{background-color:transparent;}#mermaid-figure-3 .label text,#mermaid-figure-3 span{fill:#333;color:#333;}#mermaid-figure-3 .node rect,#mermaid-figure-3 .node circle,#mermaid-figure-3 .node ellipse,#mermaid-figure-3 .node polygon,#mermaid-figure-3 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-figure-3 .rough-node .label text,#mermaid-figure-3 .node .label text{text-anchor:middle;}#mermaid-figure-3 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-3 .node .label{text-align:center;}#mermaid-figure-3 .node.clickable{cursor:pointer;}#mermaid-figure-3 .arrowheadPath{fill:#333333;}#mermaid-figure-3 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-figure-3 .flowchart-link{stroke:#333333;fill:none;}#mermaid-figure-3 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-figure-3 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-figure-3 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-figure-3 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-3 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-figure-3 .cluster text{fill:#333;}#mermaid-figure-3 .cluster span{color:#333;}#mermaid-figure-3 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-3 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-figure-3 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
-<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016761_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016761_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016761_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016761_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763001016761_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763001016761_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#mermaid-1763001016761_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_0" d="M129.563,115.648L133.729,115.648C137.896,115.648,146.229,115.648,152.521,115.69C158.813,115.732,163.063,115.815,166.646,115.885C170.229,115.956,173.146,116.013,174.605,116.041L176.063,116.07"></path><path marker-end="url(#mermaid-1763001016761_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_E_1" d="M362.052,149.455L373.253,154.428C384.454,159.4,406.856,169.344,420.965,174.358C435.074,179.372,440.891,179.456,446.04,179.53C451.19,179.603,455.673,179.668,457.915,179.7L460.157,179.732"></path><path marker-end="url(#mermaid-1763001016761_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_D_2" d="M355.624,76.413L367.897,69.101C380.169,61.789,404.713,47.164,436.099,39.851C467.484,32.539,505.711,32.539,543.938,32.539C582.164,32.539,620.391,32.539,642.37,32.994C664.35,33.448,670.083,34.357,675.158,35.162C680.233,35.967,684.649,36.667,686.857,37.017L689.065,37.367"></path><path marker-end="url(#mermaid-1763001016761_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_D_3" d="M595.082,150.152L605.671,143.824C616.26,137.495,637.439,124.837,652.869,115.455C668.299,106.073,677.981,99.966,687.099,94.215C696.217,88.464,704.771,83.068,709.048,80.371L713.325,77.673"></path><path marker-end="url(#mermaid-1763001016761_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_G_4" d="M611.797,192.711L619.6,194.141C627.404,195.57,643.01,198.43,654.454,199.859C665.897,201.289,673.177,201.289,679.79,201.289C686.404,201.289,692.35,201.289,695.324,201.289L698.297,201.289"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
+<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031375_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031375_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031375_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031375_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763345031375_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763345031375_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#mermaid-1763345031375_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_0" d="M129.563,115.648L133.729,115.648C137.896,115.648,146.229,115.648,152.521,115.69C158.813,115.732,163.063,115.815,166.646,115.885C170.229,115.956,173.146,116.013,174.605,116.041L176.063,116.07"></path><path marker-end="url(#mermaid-1763345031375_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_E_1" d="M362.052,149.455L373.253,154.428C384.454,159.4,406.856,169.344,420.965,174.358C435.074,179.372,440.891,179.456,446.04,179.53C451.19,179.603,455.673,179.668,457.915,179.7L460.157,179.732"></path><path marker-end="url(#mermaid-1763345031375_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_D_2" d="M355.624,76.413L367.897,69.101C380.169,61.789,404.713,47.164,436.099,39.851C467.484,32.539,505.711,32.539,543.938,32.539C582.164,32.539,620.391,32.539,642.37,32.994C664.35,33.448,670.083,34.357,675.158,35.162C680.233,35.967,684.649,36.667,686.857,37.017L689.065,37.367"></path><path marker-end="url(#mermaid-1763345031375_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_D_3" d="M595.082,150.152L605.671,143.824C616.26,137.495,637.439,124.837,652.869,115.455C668.299,106.073,677.981,99.966,687.099,94.215C696.217,88.464,704.771,83.068,709.048,80.371L713.325,77.673"></path><path marker-end="url(#mermaid-1763345031375_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_G_4" d="M611.797,192.711L619.6,194.141C627.404,195.57,643.01,198.43,654.454,199.859C665.897,201.289,673.177,201.289,679.79,201.289C686.404,201.289,692.35,201.289,695.324,201.289L698.297,201.289"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
@@ -585,22 +358,111 @@ No
 </div>
 </div>
 <ol type="a">
-<li>¿Excepcion?</li>
-<li>Enviar</li>
-<li>Abrir issue</li>
+<li>¿Excepción? / b. Enviar / c.&nbsp;Abrir issue</li>
 </ol>
-</section>
-<section id="el-proceso-para-enviar-software-para-revision" class="slide level2 scrollable">
-<h2><i class="fa-solid fa-edit" aria-label="edit"></i> El proceso para enviar software para revision</h2>
-<p>El proceso para enviar software para revision</p>
+<details>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 644.96875 130.09375" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-2" height="480">
-<style>#mermaid-figure-2{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-figure-2 .error-icon{fill:#552222;}#mermaid-figure-2 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-2 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-2 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-2 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-2 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-2 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-2 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-2 .marker{fill:#333333;stroke:#333333;}#mermaid-figure-2 .marker.cross{stroke:#333333;}#mermaid-figure-2 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-2 p{margin:0;}#mermaid-figure-2 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-figure-2 .cluster-label text{fill:#333;}#mermaid-figure-2 .cluster-label span{color:#333;}#mermaid-figure-2 .cluster-label span p{background-color:transparent;}#mermaid-figure-2 .label text,#mermaid-figure-2 span{fill:#333;color:#333;}#mermaid-figure-2 .node rect,#mermaid-figure-2 .node circle,#mermaid-figure-2 .node ellipse,#mermaid-figure-2 .node polygon,#mermaid-figure-2 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-figure-2 .rough-node .label text,#mermaid-figure-2 .node .label text{text-anchor:middle;}#mermaid-figure-2 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-2 .node .label{text-align:center;}#mermaid-figure-2 .node.clickable{cursor:pointer;}#mermaid-figure-2 .arrowheadPath{fill:#333333;}#mermaid-figure-2 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-figure-2 .flowchart-link{stroke:#333333;fill:none;}#mermaid-figure-2 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-figure-2 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-figure-2 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-figure-2 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-2 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-figure-2 .cluster text{fill:#333;}#mermaid-figure-2 .cluster span{color:#333;}#mermaid-figure-2 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-2 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-figure-2 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
-<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016660_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016660_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016660_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763001016660_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763001016660_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763001016660_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#mermaid-1763001016660_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_0" d="M112.422,65.047L116.589,65.047C120.755,65.047,129.089,65.047,135.339,65.047C141.589,65.047,145.755,65.047,149.255,65.047C152.755,65.047,155.589,65.047,157.005,65.047L158.422,65.047"></path><path marker-end="url(#mermaid-1763001016660_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_D_1" d="M295.422,54.502L301.155,53.592C306.888,52.683,318.354,50.865,327.703,50.623C337.053,50.381,344.285,51.715,350.861,52.928C357.438,54.142,363.359,55.234,366.32,55.78L369.28,56.326"></path><path marker-end="url(#mermaid-1763001016660_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_D_C_2" d="M373.214,74.042L365.982,75.209C358.749,76.377,344.285,78.712,334.186,79.425C324.087,80.138,318.354,79.229,313.28,78.424C308.205,77.619,303.789,76.919,301.581,76.569L299.373,76.219"></path><path marker-end="url(#mermaid-1763001016660_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_D_E_3" d="M478.813,65.547L483.918,65.464C489.023,65.38,499.234,65.214,506.934,65.13C514.634,65.047,519.823,65.047,524.345,65.047C528.867,65.047,532.723,65.047,534.65,65.047L536.578,65.047"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 793.90625 264.36328125" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-4" height="480">
+<style>#mermaid-figure-4{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-figure-4 .error-icon{fill:#552222;}#mermaid-figure-4 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-4 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-4 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-4 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-4 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-4 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-4 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-4 .marker{fill:#333333;stroke:#333333;}#mermaid-figure-4 .marker.cross{stroke:#333333;}#mermaid-figure-4 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-4 p{margin:0;}#mermaid-figure-4 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-figure-4 .cluster-label text{fill:#333;}#mermaid-figure-4 .cluster-label span{color:#333;}#mermaid-figure-4 .cluster-label span p{background-color:transparent;}#mermaid-figure-4 .label text,#mermaid-figure-4 span{fill:#333;color:#333;}#mermaid-figure-4 .node rect,#mermaid-figure-4 .node circle,#mermaid-figure-4 .node ellipse,#mermaid-figure-4 .node polygon,#mermaid-figure-4 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-figure-4 .rough-node .label text,#mermaid-figure-4 .node .label text{text-anchor:middle;}#mermaid-figure-4 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-4 .node .label{text-align:center;}#mermaid-figure-4 .node.clickable{cursor:pointer;}#mermaid-figure-4 .arrowheadPath{fill:#333333;}#mermaid-figure-4 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-figure-4 .flowchart-link{stroke:#333333;fill:none;}#mermaid-figure-4 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-figure-4 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-figure-4 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-figure-4 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-4 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-figure-4 .cluster text{fill:#333;}#mermaid-figure-4 .cluster span{color:#333;}#mermaid-figure-4 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-4 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-figure-4 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
+<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031687_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031687_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031687_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031687_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763345031687_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763345031687_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#mermaid-1763345031687_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_0" d="M112.422,115.648L116.589,115.648C120.755,115.648,129.089,115.648,135.38,115.69C141.672,115.732,145.922,115.815,149.505,115.885C153.089,115.956,156.006,116.013,157.464,116.041L158.923,116.07"></path><path marker-end="url(#mermaid-1763345031687_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_E_1" d="M345.695,148.672L356.765,153.417C367.836,158.163,389.976,167.654,403.955,172.441C417.934,177.228,423.75,177.311,428.9,177.385C434.05,177.459,438.533,177.523,440.774,177.555L443.016,177.587"></path><path marker-end="url(#mermaid-1763345031687_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_D_2" d="M338.484,76.413L350.756,69.101C363.028,61.789,387.573,47.164,418.243,39.851C448.914,32.539,485.711,32.539,522.508,32.539C559.305,32.539,596.102,32.539,617.367,33.029C638.632,33.518,644.365,34.497,649.441,35.364C654.516,36.23,658.935,36.985,661.145,37.362L663.354,37.739"></path><path marker-end="url(#mermaid-1763345031687_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_D_3" d="M570.269,148.913L580.707,142.434C591.145,135.954,612.022,122.995,626.84,113.64C641.659,104.286,650.419,98.536,658.622,93.153C666.825,87.769,674.471,82.752,678.294,80.243L682.117,77.734"></path><path marker-end="url(#mermaid-1763345031687_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_G_4" d="M586.372,190.273L594.126,191.751C601.881,193.23,617.39,196.187,628.184,197.666C638.979,199.145,645.06,199.145,650.474,199.145C655.888,199.145,660.635,199.145,663.009,199.145L665.383,199.145"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
+<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="edgeLabel"></span>
+</div>
+</foreignobject></g></g><g transform="translate(412.1171875, 177.14453125)" class="edgeLabel"><g transform="translate(-9.3984375, -12)" class="label"><foreignobject height="24" width="18.796875">
+<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="edgeLabel">
+<p>
+No
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(522.5078125, 32.5390625)" class="edgeLabel"><g transform="translate(-6.1328125, -12)" class="label"><foreignobject height="24" width="12.265625">
+<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="edgeLabel">
+<p>
+Si
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(632.8984375, 110.03515625)" class="edgeLabel"><g transform="translate(-6.1328125, -12)" class="label"><foreignobject height="24" width="12.265625">
+<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="edgeLabel">
+<p>
+Si
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(632.8984375, 199.14453125)" class="edgeLabel"><g transform="translate(-9.3984375, -12)" class="label"><foreignobject height="24" width="18.796875">
+<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="edgeLabel">
+<p>
+No
+</p>
+</span>
+</div>
+</foreignobject></g></g></g><g class="nodes"><g transform="translate(60.2109375, 115.6484375)" id="flowchart-B-0" class="node default"><circle cy="0" cx="0" r="52.2109375" style="" class="basic label-container"></circle><g transform="translate(-44.7109375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="89.421875">
+<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="nodeLabel">
+<p>
+1-Abrir issue
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(270.0703125, 115.6484375)" id="flowchart-C-2" class="node default"><polygon transform="translate(-107.6484375,107.6484375)" class="label-container" points="107.6484375,0 215.296875,-107.6484375 107.6484375,-215.296875 0,-107.6484375"></polygon><g transform="translate(-80.6484375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="161.296875">
+<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="nodeLabel">
+<p>
+2-¿Dentro del alcance?
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(522.5078125, 177.14453125)" id="flowchart-E-4" class="node default"><polygon transform="translate(-75.9921875,75.9921875)" class="label-container" points="75.9921875,0 151.984375,-75.9921875 75.9921875,-151.984375 0,-75.9921875"></polygon><g transform="translate(-48.9921875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="97.984375">
+<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="nodeLabel">
+<p>
+3-¿Excepción?
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(726.6015625, 48.5390625)" id="flowchart-D-6" class="node default"><rect height="54" width="118.609375" y="-27" x="-59.3046875" data-et="node" data-id="abc" style="" class="basic label-container"></rect><g transform="translate(-29.3046875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="58.609375">
+<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="nodeLabel">
+<p>
+4-Enviar
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(726.6015625, 199.14453125)" id="flowchart-G-10" class="node default"><circle cy="0" cx="0" r="57.21875" style="" class="basic label-container"></circle><g transform="translate(-49.71875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="99.4375">
+<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="nodeLabel">
+<p>
+5-Cerrar issue
+</p>
+</span>
+</div>
+</foreignobject></g></g></g></g></g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</details>
+</section>
+<section id="enviar-software-para-revisión" class="slide level2 scrollable">
+<h2><a href="https://github.com/ropensci/software-review/issues">Enviar software para revisión</a></h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 644.96875 130.09375" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-3" height="480">
+<style>#mermaid-figure-3{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-figure-3 .error-icon{fill:#552222;}#mermaid-figure-3 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-3 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-3 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-3 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-3 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-3 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-3 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-3 .marker{fill:#333333;stroke:#333333;}#mermaid-figure-3 .marker.cross{stroke:#333333;}#mermaid-figure-3 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-3 p{margin:0;}#mermaid-figure-3 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-figure-3 .cluster-label text{fill:#333;}#mermaid-figure-3 .cluster-label span{color:#333;}#mermaid-figure-3 .cluster-label span p{background-color:transparent;}#mermaid-figure-3 .label text,#mermaid-figure-3 span{fill:#333;color:#333;}#mermaid-figure-3 .node rect,#mermaid-figure-3 .node circle,#mermaid-figure-3 .node ellipse,#mermaid-figure-3 .node polygon,#mermaid-figure-3 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-figure-3 .rough-node .label text,#mermaid-figure-3 .node .label text{text-anchor:middle;}#mermaid-figure-3 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-3 .node .label{text-align:center;}#mermaid-figure-3 .node.clickable{cursor:pointer;}#mermaid-figure-3 .arrowheadPath{fill:#333333;}#mermaid-figure-3 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-figure-3 .flowchart-link{stroke:#333333;fill:none;}#mermaid-figure-3 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-figure-3 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-figure-3 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-figure-3 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-3 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-figure-3 .cluster text{fill:#333;}#mermaid-figure-3 .cluster span{color:#333;}#mermaid-figure-3 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-3 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-figure-3 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
+<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031594_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031594_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031594_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031594_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763345031594_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763345031594_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#mermaid-1763345031594_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_0" d="M112.422,65.047L116.589,65.047C120.755,65.047,129.089,65.047,135.339,65.047C141.589,65.047,145.755,65.047,149.255,65.047C152.755,65.047,155.589,65.047,157.005,65.047L158.422,65.047"></path><path marker-end="url(#mermaid-1763345031594_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_D_1" d="M295.422,54.502L301.155,53.592C306.888,52.683,318.354,50.865,327.703,50.623C337.053,50.381,344.285,51.715,350.861,52.928C357.438,54.142,363.359,55.234,366.32,55.78L369.28,56.326"></path><path marker-end="url(#mermaid-1763345031594_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_D_C_2" d="M373.214,74.042L365.982,75.209C358.749,76.377,344.285,78.712,334.186,79.425C324.087,80.138,318.354,79.229,313.28,78.424C308.205,77.619,303.789,76.919,301.581,76.569L299.373,76.219"></path><path marker-end="url(#mermaid-1763345031594_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_D_E_3" d="M478.813,65.547L483.918,65.464C489.023,65.38,499.234,65.214,506.934,65.13C514.634,65.047,519.823,65.047,524.345,65.047C528.867,65.047,532.723,65.047,534.65,65.047L536.578,65.047"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
@@ -664,28 +526,301 @@ Si
 </div>
 </div>
 <ol type="a">
-<li>Publicar</li>
-<li>Revisar</li>
+<li>Publicar / b. Revisar</li>
 </ol>
+<details>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 614.140625 130.09375" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-2" height="480">
+<style>#mermaid-figure-2{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-figure-2 .error-icon{fill:#552222;}#mermaid-figure-2 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-2 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-2 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-2 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-2 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-2 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-2 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-2 .marker{fill:#333333;stroke:#333333;}#mermaid-figure-2 .marker.cross{stroke:#333333;}#mermaid-figure-2 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-2 p{margin:0;}#mermaid-figure-2 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-figure-2 .cluster-label text{fill:#333;}#mermaid-figure-2 .cluster-label span{color:#333;}#mermaid-figure-2 .cluster-label span p{background-color:transparent;}#mermaid-figure-2 .label text,#mermaid-figure-2 span{fill:#333;color:#333;}#mermaid-figure-2 .node rect,#mermaid-figure-2 .node circle,#mermaid-figure-2 .node ellipse,#mermaid-figure-2 .node polygon,#mermaid-figure-2 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-figure-2 .rough-node .label text,#mermaid-figure-2 .node .label text{text-anchor:middle;}#mermaid-figure-2 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-2 .node .label{text-align:center;}#mermaid-figure-2 .node.clickable{cursor:pointer;}#mermaid-figure-2 .arrowheadPath{fill:#333333;}#mermaid-figure-2 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-figure-2 .flowchart-link{stroke:#333333;fill:none;}#mermaid-figure-2 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-figure-2 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-figure-2 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-figure-2 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-2 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-figure-2 .cluster text{fill:#333;}#mermaid-figure-2 .cluster span{color:#333;}#mermaid-figure-2 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-2 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-figure-2 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
+<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031493_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031493_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031493_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1763345031493_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763345031493_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1763345031493_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#mermaid-1763345031493_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_0" d="M112.422,65.047L116.589,65.047C120.755,65.047,129.089,65.047,135.339,65.047C141.589,65.047,145.755,65.047,149.255,65.047C152.755,65.047,155.589,65.047,157.005,65.047L158.422,65.047"></path><path marker-end="url(#mermaid-1763345031493_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_D_1" d="M287.578,54.722L293.311,53.776C299.044,52.83,310.51,50.939,319.86,50.66C329.209,50.381,336.441,51.715,343.018,52.928C349.594,54.142,355.515,55.234,358.476,55.78L361.436,56.326"></path><path marker-end="url(#mermaid-1763345031493_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_D_C_2" d="M365.37,74.042L358.138,75.209C350.906,76.377,336.441,78.712,326.342,79.406C316.243,80.101,310.51,79.155,305.435,78.318C300.36,77.48,295.942,76.752,293.734,76.387L291.525,76.023"></path><path marker-end="url(#mermaid-1763345031493_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_D_E_3" d="M470.969,65.547L476.074,65.464C481.18,65.38,491.391,65.214,499.09,65.13C506.79,65.047,511.979,65.047,516.501,65.047C521.023,65.047,524.879,65.047,526.807,65.047L528.734,65.047"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
+<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="edgeLabel"></span>
+</div>
+</foreignobject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
+<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="edgeLabel"></span>
+</div>
+</foreignobject></g></g><g transform="translate(321.9765625, 81.046875)" class="edgeLabel"><g transform="translate(-9.3984375, -12)" class="label"><foreignobject height="24" width="18.796875">
+<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="edgeLabel">
+<p>
+No
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(501.6015625, 65.046875)" class="edgeLabel"><g transform="translate(-6.1328125, -12)" class="label"><foreignobject height="24" width="12.265625">
+<div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="edgeLabel">
+<p>
+Si
+</p>
+</span>
+</div>
+</foreignobject></g></g></g><g class="nodes"><g transform="translate(60.2109375, 65.046875)" id="flowchart-B-0" class="node default"><circle cy="0" cx="0" r="52.2109375" style="" class="basic label-container"></circle><g transform="translate(-44.7109375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="89.421875">
+<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="nodeLabel">
+<p>
+1-Abrir issue
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(225, 65.046875)" id="flowchart-C-2" class="node default"><rect height="54" width="125.15625" y="-27" x="-62.578125" data-et="node" data-id="abc" style="" class="basic label-container"></rect><g transform="translate(-32.578125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="65.15625">
+<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="nodeLabel">
+<p>
+2-Revisar
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(413.421875, 65.046875)" id="flowchart-D-4" class="node default"><polygon transform="translate(-57.046875,57.046875)" class="label-container" points="57.046875,0 114.09375,-57.046875 57.046875,-114.09375 0,-57.046875"></polygon><g transform="translate(-30.046875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="60.09375">
+<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="nodeLabel">
+<p>
+3-¿Listo?
+</p>
+</span>
+</div>
+</foreignobject></g></g><g transform="translate(569.4375, 65.046875)" id="flowchart-E-8" class="node default"><circle cy="0" cx="0" r="36.703125" style="" class="basic label-container"></circle><g transform="translate(-29.203125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="58.40625">
+<div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
+<span class="nodeLabel">
+<p>
+Publicar
+</p>
+</span>
+</div>
+</foreignobject></g></g></g></g></g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</details>
 </section>
-<section id="comunicacion-estructura" class="slide level2">
-<h2><i class="fa-solid fa-edit" aria-label="edit"></i> Comunicacion: Estructura</h2>
-<h3 id="la-estructura-del-feedback-constructivo-y-amable">La estructura del feedback constructivo y amable</h3>
+<section id="pkgcheck-uso-en-un-issue" class="slide level2">
+<h2>{pkgcheck}: Uso en un “issue”</h2>
+<p><br></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="sc">@</span>ropensci<span class="sc">-</span>review<span class="sc">-</span>bot check package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p><a href="https://github.com/ropensci/software-review/issues/593#issuecomment-1608404055">Ejemplo</a></p>
+
+<aside><div>
+<p><a href="https://devguide.ropensci.org/es/bot_cheatsheet.es.html">Comandos del bot</a></p>
+</div></aside></section>
+<section id="pkgcheck-uso-local" class="slide level2">
+<h2>{pkgcheck}: Uso local</h2>
+<p>Instalación</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a>  <span class="fu">options</span> (<span class="at">repos =</span> <span class="fu">c</span> (</span>
+<span id="cb2-2"><a href=""></a>    <span class="at">ropenscireviewtools =</span> <span class="st">"https://ropensci-review-tools.r-universe.dev"</span>,</span>
+<span id="cb2-3"><a href=""></a>    <span class="at">CRAN =</span> <span class="st">"https://cloud.r-project.org"</span></span>
+<span id="cb2-4"><a href=""></a>  ))</span>
+<span id="cb2-5"><a href=""></a>  <span class="fu">install.packages</span>(<span class="st">"pkgcheck"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p>Ejemplo</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a>  paquete <span class="ot">&lt;-</span> <span class="st">"/camino/al/paquete"</span></span>
+<span id="cb3-2"><a href=""></a>  resultados <span class="ot">&lt;-</span> pkgcheck<span class="sc">::</span><span class="fu">pkgcheck</span>(paquete)</span>
+<span id="cb3-3"><a href=""></a>  resultados</span>
+<span id="cb3-4"><a href=""></a>  </span>
+<span id="cb3-5"><a href=""></a>  <span class="fu">summary</span>(resultados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<aside><div>
+<p><a href="https://docs.ropensci.org/pkgcheck/">Documentación de {pkgcheck}</a></p>
+</div></aside></section>
+<section id="código-de-conducta" class="slide level2">
+<h2>Código de Conducta</h2>
 <ul>
-<li><p>Como revisor/a, escribi una introduccion minima pero constructiva y amable como encabezado para una revision imaginaria.</p></li>
-<li><p>Como autor/a, escribi una introduccion minima pero constructiva y amable como encabezado para tus respuestas imaginarias a las sugerencias de un/a revisor/a.</p></li>
+<li>La comunidad es nuestro mejor activo</li>
+<li>Nuestra diversidad es nuestra fortaleza</li>
+<li>No toleramos ningún tipo de acoso</li>
+</ul>
+
+<aside><div>
+<p><a href="https://ropensci.org/es/c%C3%B3digo-de-conducta/">Código de Conducta</a></p>
+</div></aside></section>
+<section id="comunicación-amable-y-constructiva" class="slide level2">
+<h2>Comunicación amable y constructiva</h2>
+<p><br></p>
+<p>Ofrecer</p>
+<ul>
+<li>Seguridad</li>
+<li>Sugerencia/Sentencia</li>
+<li>Seguimiento</li>
+</ul>
+
+<aside><div>
+<p><a href="https://www.amazon.com/-/es/influir-personas-Friends-Influence-Spanish/dp/164473009X">Cómo ganar amigos e influir sobre las personas</a><br>
+<a href="https://www.amazon.com/Conversaciones-Cruciales-Edici%C3%B3n-revisada-conocimiento-ebook/dp/B01EX1TZQG/ref=sr_1_1?adgrpid=167955646707&amp;dib=eyJ2IjoiMSJ9.Ws1WzIBF0cC2Dm2-H47hguDVuXRPmMy9rZLGRYA4t3ER8EP9QL1L1dPW8a2l0c2aI65gElZhBVvYTfIcqtuaBVQcnOAmIBffgVzFQKm44rUISeaXgEIVBBw4-muztHHDiwE9jwRJSFYtSDFMAq4h9Rvb-GvpCxfZNzbfBApAjBAXNIQ63XVjTnFrOly1C-YCBSC8uEVyOljvl5CfMMfShGRKX-fYLjSLXyU0CJW-xuk.LRH-a9xfbt1VH_6O1wTX-6nxoUp_g1gSKmBPfElISuA&amp;dib_tag=se&amp;hvadid=730129623296&amp;hvdev=c&amp;hvlocphy=9070297&amp;hvnetw=g&amp;hvqmt=e&amp;hvrand=357311298508997420&amp;hvtargid=kwd-319512755646&amp;hydadcr=23800_13790585&amp;keywords=conversaciones+cruciales&amp;mcid=bd94c27aa7253eda9e137472f79bfcd2&amp;qid=1763123775&amp;sr=8-1">Conversaciones Cruciales: herramientas para comunicar mejor cuando más se necesita</a></p>
+</div></aside></section>
+<section id="comunicación-amable-y-constructiva-1" class="slide level2">
+<h2>Comunicación amable y constructiva</h2>
+<p>Explica cómo y por qué el paquete encaja en estas categorías.</p>
+<blockquote>
+<p><code>@autor/a</code>: No encontré una categoría que se ajustara perfectamente, por lo que creé una categoría nueva.</p>
+</blockquote>
+<p><br></p>
+<p><strong>Del 1 al 10, cuantos puntos le das a cada respuesta?</strong></p>
+<details>
+<summary>
+Respuesta 1
+</summary>
+<p><code>@editor/a</code>:</p>
+<blockquote>
+<p><span class="citation" data-cites="autor/a">@autor/a</span>,<br>
+Lamentablemente nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.</p>
+</blockquote>
+</details>
+<details>
+<summary>
+Respuesta 2
+</summary>
+<p><code>@editor/a</code>:</p>
+<blockquote>
+<p><span class="citation" data-cites="autor/a">@autor/a</span> gracias por tu consulta. El paquete parece muy interesante pero lamentablemente está fuera del alcance de las categorias actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.</p>
+</blockquote>
+</details>
+<details>
+<summary>
+Respuesta 3
+</summary>
+<p><code>@editor/a</code>:</p>
+<blockquote>
+<p><span class="citation" data-cites="autor/a">@autor/a</span> gracias por tu consulta. El paquete parece muy interesante pero lamentablemente está fuera del alcance de las categorias actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.</p>
+</blockquote>
+<blockquote>
+<p>Te recomendaría revisar y publicar el paquete en el <a href="https://joss.theoj.org/">Journal of Open Source Software</a>.</p>
+</blockquote>
+<blockquote>
+<p>Cuando tengas otro paquete dentro de nuestro alcance por favor volvé a contactarnos.</p>
+</blockquote>
+</details>
+<p><sub> <a href="https://devdevguide.netlify.app/es/softwarereview_editor.es#outofscoperesponse">Responder a las presentaciones fuera del ámbito de aplicación</a> </sub></p>
+</section>
+<section id="comunicación-amable-y-constructiva-2" class="slide level2">
+<h2>Comunicación amable y constructiva</h2>
+<p><br></p>
+<p>Ejemplos de revisión y respuesta en {agroclimatico}</p>
+<details>
+<summary>
+<a href="https://github.com/ropensci/software-review/issues/599#issuecomment-1936698026">Revisión de <code>@VeruGHub</code> (revisora)</a>
+</summary>
+<p>Seguridad</p>
+<blockquote>
+<p>En primer lugar, quiero agradecer la oportunidad de revisar este paquete y espero que los comentarios sirvan para mejorar en los puntos que los autores consideren oportunos.</p>
+</blockquote>
+<p>Sugerencia/Sentencia</p>
+<blockquote>
+<p>Creo que algunos aspectos formales de la documentación pueden ser mejorados. Para empezar, la funcionalidad del paquete no está completamente definida en la documentación (Readme) … Mejorar estas descripciones e incluir programación defensiva relativa a los argumentos (en general faltante) ayudaría mucho a los usuarios.</p>
+</blockquote>
+</details>
+<details>
+<summary>
+<a href="https://github.com/ropensci/software-review/issues/599#issuecomment-2143389578">Respuesta de <code>@paocorrales</code> (autora)</a>
+</summary>
+<p>Seguridad</p>
+<blockquote>
+<p>En primer lugar, muchas gracias <span class="citation" data-cites="pmnatural">@pmnatural</span> y <span class="citation" data-cites="VeruGHub">@VeruGHub</span> por la revisión y los comentarios.</p>
+</blockquote>
+<p>Sugerencia/Sentencia</p>
+<blockquote>
+<p>Incorporé los comentarios y sugerencias al paquete.</p>
+</blockquote>
+<p>Seguimiento</p>
+<blockquote>
+<p>Espero no haberme olvidado de nada, aguardo sus comentarios!</p>
+</blockquote>
+</details>
+<p>Ejemplo de oposición a una sugerencia en {eph}</p>
+<details>
+<summary>
+<a href="https://github.com/ropensci/software-review/issues/593#issuecomment-1714421144">Respuesta de <code>@caropradier</code> (autora)</a>
+</summary>
+<p>Seguridad</p>
+<blockquote>
+<p><span class="citation" data-cites="lidefi87">@lidefi87</span> gracias de nuevo por tus esfuerzos!</p>
+</blockquote>
+<p>Sugerencia/Sentencia</p>
+<blockquote>
+<p>Respecto al nombre de las funciones, intentaría no hacer modificaciones mayores para no perturbar el flujo de trabajo de nuestros usuarios actuales (aproximadamente 30 mil personas usan el paquete y quisiera evitar generarles inconvenientes si no se trata de algo fundamental para el funcionamiento del paquete). No obstante, estoy de acuerdo con que se trata de una buena práctica, y lo tendré presente al incorporar nuevas funciones.</p>
+</blockquote>
+</details>
+<p><sub> <a href="https://devdevguide.netlify.app/es/softwarereview_editor.es#reviewersupport">Responder a las preguntas de quienes revisan</a> </sub></p>
+</section></section>
+<section id="pausa-10" class="title-slide slide level1 center">
+<h1>Pausa 10’</h1>
+
+</section>
+
+<section>
+<section id="proponer-software-para-revisión-1" class="title-slide slide level1 center">
+<h1>Proponer software para revisión</h1>
+
+</section>
+<section id="abrir-un-issue" class="slide level2">
+<h2>Abrir un “issue”</h2>
+<p><br></p>
+<p>Abrí un “issue” para proponer software para revisión en el <a href="https://github.com/maurolepore/software-review/issues">repositorio de práctica</a></p>
+<p><br></p>
+<p>Usá tu propio paquete o cualquiera de estos:</p>
+<ul>
+<li><a href="https://github.com/ropensci/software-review/issues/599">{agroclimatico}</a>: Índices y Estadísticos Climáticos e Hidrológicos</li>
+<li><a href="https://github.com/ropensci/software-review/issues/593">{eph}</a>: Encuesta Permanente de Hogares de Argentina</li>
+<li><a href="https://github.com/ropensci/software-review/issues/620">{karel}</a>: Aprendiendo programación en R</li>
 </ul>
 </section>
-<section id="reflexiones" class="slide level2">
-<h2><i class="fa-solid fa-edit" aria-label="edit"></i> Reflexiones</h2>
-<p>Escribir reflexiones que cuenten la historia de lo que vimos</p>
+<section id="comunicación-amable-y-constructiva-3" class="slide level2">
+<h2>Comunicación amable y constructiva</h2>
+<p><br></p>
 <ul>
-<li>Que? ej. Las actividades principales del proceso son …</li>
-<li>Quien? ej. Los roles que participan en la presubmisión son …</li>
-<li>Como? ej. El feedback debe ser …</li>
-<li>Donde? ej. Todo el proceso ocurre en ….</li>
-<li>Por que? e.g.&nbsp;La revision por pares ayuda a …</li>
-<li>Cuando? ej. La evaluacion de alcance debe hacerse antes de …</li>
+<li><p><a href="https://docs.ropensci.org/karel/">{karel}</a> está fuera del alcance de las categorías de rOpenSci (<a href="https://github.com/ropensci/software-review/issues/620">fue revisado</a> como excepción por el programa de campeones/as)</p></li>
+<li><p>Asumí el rol de editor/a</p></li>
+<li><p>Escribí un comentario amable y constructivo, notificando al autor que el paquete está fuera del alcance de rOpenSci</p></li>
+<li><p>Recomendando su revisión y publicación en el <a href="http://jose.theoj.org/">“Journal of Open Source Education”</a></p></li>
+</ul>
+</section></section>
+<section>
+<section id="preguntas-y-respuestas" class="title-slide slide level1 center">
+<h1>Preguntas y respuestas</h1>
+<p><br></p>
+<ul>
+<li><p>Generar preguntas sobre el proceso de proponer software para revisión. Para inspirarte podés explorar:</p>
+<ul>
+<li><a href="https://github.com/ropensci/software-review/issues">la plantilla real de propuesta de software para revisión</a></li>
+<li><a href="https://github.com/ropensci/software-review/issues?q=is%3Aissue%20label%3A0%2Fpresubmission">“issues” reales etiquetados con 0/presubmission</a></li>
+</ul></li>
+<li><p>Vota con <code>+</code> en 3 preguntas de otras personas</p></li>
+<li><p>Respuestas</p></li>
+</ul>
+</section>
+<section id="recursos" class="slide level2">
+<h2>Recursos</h2>
+<ul>
+<li>FIXME Repositorio de práctica: <a href="https://github.com/maurolepore/software-review" class="uri">https://github.com/maurolepore/software-review</a></li>
+<li>FIXME <a href="https://bit.ly/taller-de-revision-de-software-por-pares-de-ropensci">Documento colaborativo</a></li>
+<li><a href="https://ropensci.org/es/c%C3%B3digo-de-conducta/">Código de Conducta</a></li>
+<li>Libro <a href="https://devdevguide.netlify.app/es/index.es">Paquetes de rOpenSci: Desarrollo, mantenimiento y revisión por pares</a>
+<ul>
+<li><a href="https://devdevguide.netlify.app/es/softwarereview_author.es">Guía para quienes crean paquetes</a></li>
+<li><a href="https://devdevguide.netlify.app/es/softwarereview_reviewer.es">Guía para quienes hacen una revisión</a></li>
+</ul></li>
+<li><a href="https://docs.ropensci.org/pkgcheck/">pkgcheck</a></li>
+<li>Paquetes de campeones/as en español:
+<ul>
+<li><a href="https://github.com/ropensci/software-review/issues/593">eph</a></li>
+<li><a href="https://github.com/ropensci/software-review/issues/599">agroclimatico</a></li>
+<li><a href="https://github.com/ropensci/software-review/issues/620">karel</a></li>
+</ul></li>
+<li>Blogs sobre el proceso de revisión:
+<ul>
+<li><a href="https://ropensci.org/es/blog/2025/03/25/r-package-review/">Revisión del software, perspectivas de un académico</a> (Alex Koiter, autor)</li>
+<li><a href="https://ropensci.org/es/blog/2017/09/08/first-review-experiences/">Experiencias revisando paquetes de rOpenSci por primera vez</a> (Verena Haunschmid, revisora)</li>
+<li><a href="https://ropensci.org/es/blog/2017/08/22/first-package-review/">Así que (no) crees que puedas revisar un paquete</a> (Mara Averick revisora)</li>
+</ul></li>
+<li>Blog sobre comunicación en open source (en ingles): <a href="https://snarky.ca/setting-expectations-for-open-source-participation/">Setting expectations for open source participation</a></li>
+<li><a href="https://devdevguide.netlify.app/es/softwarereview_reviewer.es#volunteering-as-a-reviewer">Voluntariarte para revisar</a></li>
 </ul>
 
 </section></section>
